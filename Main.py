@@ -24,6 +24,9 @@ def save_ranks_to_file(bug_report, dataset):
     ranks_file.write("\n")
 
     rank_first_file = -1
+    top1_count = 0
+    top5_count = 0
+    top10_count = 0
     files_binary_relevance = []
     did_locate_bug = False
     count = 0
@@ -41,13 +44,16 @@ def save_ranks_to_file(bug_report, dataset):
             if file_name == key:
                 ranked = True
 
-        top = " 20 "
+        top = ""
         if count == 1:
             top = " 1 "
+            top1_count += 1 if ranked else 0
         elif 1 < count <= 5:
             top = " 5 "
+            top5_count += 1 if ranked else 0
         elif count > 5:
             top = " 10 "
+            top10_count += 1 if ranked else 0
 
         ranks_file.write("TOP " + top + " | " if ranked else "")
         ranks_file.write(" | ".join(str(i) for i in value))
@@ -65,7 +71,7 @@ def save_ranks_to_file(bug_report, dataset):
     ranks_file.write("\n")
     ranks_file.write("SUCCESSFULLY LOCATED BUG! " if did_locate_bug else "")
     ranks_file.write("\n +++++++++++++++++++++++++++++++++++++ \n")
-    return rank_first_file, files_binary_relevance
+    return rank_first_file, files_binary_relevance, [top1_count, top5_count, top10_count]
 
 
 def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset):
@@ -96,8 +102,8 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     rank_combinator.combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
 
     # print results in file
-    first_file_pos_ranked, files_binary_relevance = save_ranks_to_file(current_bug_report, dataset)
-    return first_file_pos_ranked, files_binary_relevance
+    first_file_pos_ranked, files_binary_relevance, top_n_rank = save_ranks_to_file(current_bug_report, dataset)
+    return first_file_pos_ranked, files_binary_relevance, top_n_rank
 
 
 def main():
@@ -114,6 +120,7 @@ def main():
     # metrics
     files_pos_ranked = []
     binary_relevance_list = []
+    top_n_rank_list = [0, 0, 0]
 
     # FORM 1
     # Compute for each bug report
@@ -121,20 +128,21 @@ def main():
     #     current_bug_report = bug_report_list[i]
     #     dataset = {}
     #
-    #     first_file_pos_ranked, files_binary_relevance = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
+    #     first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
     #
     #     files_pos_ranked.append(first_file_pos_ranked)
     #     binary_relevance_list.append(files_binary_relevance)
+    #     top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     # END FORM 1
 
     # FORM 2
     # Compute for ONE bug report
     current_bug_report = bug_report_list[0]
-    first_file_pos_ranked, files_binary_relevance = localize_bugs(current_bug_report, source_code_list, bug_report_list,
-                                                                  dataset)
+    first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
 
     files_pos_ranked.append(first_file_pos_ranked)
     binary_relevance_list.append(files_binary_relevance)
+    top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     # END FORM 2
 
     # METRICS....
@@ -142,6 +150,7 @@ def main():
     mean_average_precision = Metrics.mean_average_precision(binary_relevance_list)
 
     print("---- METRICS ---- ")
+    print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
     print("MRR (Mean Reciprocal Rank)   = ", mean_reciprocal_rank)
     print("MAP (Mean Average Precision) = ", mean_average_precision)
 
