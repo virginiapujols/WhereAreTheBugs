@@ -27,5 +27,5 @@ class FileSizeScoreCalculator:
         return 1 / (1 + math.e ** (-1 * self.normalization(number_of_terms)))
 
 
-def calculate_file_size_score(number_of_terms, max, min):
-    return 1 / (1 + math.e ** (-1 * Util.normalization(number_of_terms, max, min)))
+    def calculate_file_size_score(self, number_of_terms, max, min):
+        return 1 / (1 + math.e ** (-1 * Util.normalization(number_of_terms, max, min)))

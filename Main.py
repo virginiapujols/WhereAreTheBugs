@@ -8,7 +8,7 @@ from DataSetFieldEnum import DataSetFieldEnum
 import Metrics
 
 from DocumentSpaceCreator import DocumentSpaceCreator
-from FileSizeScoreCalculator import calculate_file_size_score
+from FileSizeScoreCalculator import FileSizeScoreCalculator
 from Util import Util
 
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
@@ -46,10 +46,11 @@ def combine_ranks(alpha, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_sco
 def get_bug_report_cosine_similarity(dataset, source_code_list, cos_simi, max_word_count, min_word_count):
     rVSMz_min = 0
     rVSMz_max = 0.0
+    file_size_score_calculator = FileSizeScoreCalculator()
     for i in range(len(cos_simi)):
         file = source_code_list[i].file_path
         cosine_score = cos_simi[i]
-        size_score = calculate_file_size_score(source_code_list[i].word_count, max_word_count, min_word_count)
+        size_score = file_size_score_calculator.calculate_file_size_score(source_code_list[i].word_count, max_word_count, min_word_count)
         rVSMScore = size_score * cosine_score
 
         if file not in dataset:

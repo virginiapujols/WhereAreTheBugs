@@ -1,16 +1,16 @@
 
  +++++++++++++++++++++++++++++++++++++ 
 Bug ID: 75739
-TOP  1  | 0.7351112995557059 | 0.0 | 0.8 org.eclipse.swt.ole.win32.Variant.java
-0.7309254590758926 | 0.0 | 0.7954446729551368 org.eclipse.swt.widgets.Decorations.java
-0.6512229791679892 | 0.08333333333333333 | 0.7244308253521589 org.eclipse.swt.SWT.java
-0.6325046385326748 | 0.0 | 0.688336189542949 org.eclipse.swt.dnd.Clipboard.java
-0.4079684445203174 | 1.0599497129094133 | 0.6439800555555487 org.eclipse.swt.widgets.Table.java
-0.49723604637554736 | 0.0 | 0.5411273603614277 org.eclipse.swt.internal.ole.win32.COM.java
-0.408316952290621 | 0.5101100286299702 | 0.5406110677672387 org.eclipse.swt.widgets.Tree.java
-0.42442138419125397 | 0.25 | 0.5090573549400133 org.eclipse.swt.custom.StyledText.java
-0.4480176398706856 | 0.0 | 0.4875644165899375 edu.udo.cs.wvtool.external.XmlReader.java
-0.4320803471957879 | 0.0 | 0.4702203298541955 org.eclipse.swt.ole.win32.OLE.java
+0.4285919375530804 | 0.0 | 0.8 org.eclipse.swt.widgets.Decorations.java
+0.39056522396290844 | 0.08333333333333333 | 0.744744214384246 org.eclipse.swt.SWT.java
+TOP  5  | 0.3577829084856394 | 0.0 | 0.6678294706676858 org.eclipse.swt.ole.win32.Variant.java
+0.32757357422774785 | 0.0 | 0.6114414117968394 org.eclipse.swt.dnd.Clipboard.java
+0.0 | 1.0599497129094133 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5101100286299702 | 0.09625174145852444 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.4665063509461097 | 0.08802424214364193 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.3535533905932738 | 0.0667113517343798 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.3535533905932738 | 0.0667113517343798 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.27395787118749776 | 0.05169261670641371 org.eclipse.swt.dnd.DragSource.java
 
 SUCCESSFULLY LOCATED BUG! 
  +++++++++++++++++++++++++++++++++++++ 
