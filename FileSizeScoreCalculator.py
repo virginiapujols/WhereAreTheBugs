@@ -1,5 +1,7 @@
 import math
 
+from Util import Util
+
 
 class FileSizeScoreCalculator:
     def __init__(self):
@@ -23,3 +25,7 @@ class FileSizeScoreCalculator:
 
     def calculate_score(self, number_of_terms):
         return 1 / (1 + math.e ** (-1 * self.normalization(number_of_terms)))
+
+
+def calculate_file_size_score(number_of_terms, max, min):
+    return 1 / (1 + math.e ** (-1 * Util.normalization(number_of_terms, max, min)))
