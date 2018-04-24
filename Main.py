@@ -15,7 +15,9 @@ from StopWord import StopWord
 from FileSizeScoreCalculator import FileSizeScoreCalculator
 import Metrics
 
-SOURCE_CODE_PATH = "/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project"
+#SOURCE_CODE_PATH = "/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project"
+SOURCE_CODE_PATH = "/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project/code/test_source_code"
+#SOURCE_CODE_PATH = "test_source_code"
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
@@ -71,9 +73,7 @@ def parse_bug_reports():
 # @return [KEY,VAL] = {KEY = file path, VAL = stemmed words of source file}
 def parse_source_code():
     java_files = []
-    for root, dir_names, file_names in os.walk("/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project/code/test_source_code"):
-        # os.walk(SOURCE_CODE_PATH):
-        # os.walk("/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project/code/test_source_code"):
+    for root, dir_names, file_names in os.walk(SOURCE_CODE_PATH):
         for filename in fnmatch.filter(file_names, "*.java"):
             java_files.append(os.path.join(root, filename))
 
