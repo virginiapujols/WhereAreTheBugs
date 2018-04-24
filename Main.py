@@ -8,62 +8,13 @@ from DataSetFieldEnum import DataSetFieldEnum
 import Metrics
 
 from DocumentSpaceCreator import DocumentSpaceCreator
-from FileSizeScoreCalculator import FileSizeScoreCalculator
-from Util import Util
+from RankCombinator import RankCombinator
+from RVSMCalculator import RVSMCalculator
 
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
 ranks_file = open('ranks_file.txt', 'w')
-
-
-def get_max_min_file_size(source_code_corpus, source_code_list):
-    max_file_word_count = -1
-    min_file_word_count = 1000000
-    for current_file in source_code_list:
-        source_code_corpus.append(current_file.content_corpus)
-        if current_file.word_count > max_file_word_count:
-            max_file_word_count = current_file.word_count
-        if current_file.word_count < min_file_word_count:
-            min_file_word_count = current_file.word_count
-
-    return max_file_word_count, min_file_word_count
-
-
-def combine_ranks(alpha, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max):
-    for key, data in dataset.items():
-        final_rank = 0
-
-        rVSM_nomalized = Util.normalization(data[DataSetFieldEnum.rVSMScore], rVSMz_max, rVSMz_min)
-        final_rank += (1 - alpha) * rVSM_nomalized
-
-        simi_nomalized = Util.normalization(data[DataSetFieldEnum.simi_score], semi_score_max, semi_score_min)
-        final_rank += alpha * simi_nomalized
-
-        dataset[key][DataSetFieldEnum.final_rank] = final_rank
-
-
-def get_bug_report_cosine_similarity(dataset, source_code_list, cos_simi, max_word_count, min_word_count):
-    rVSMz_min = 0
-    rVSMz_max = 0.0
-    file_size_score_calculator = FileSizeScoreCalculator()
-    for i in range(len(cos_simi)):
-        file = source_code_list[i].file_path
-        cosine_score = cos_simi[i]
-        size_score = file_size_score_calculator.calculate_file_size_score(source_code_list[i].word_count, max_word_count, min_word_count)
-        rVSMScore = size_score * cosine_score
-
-        if file not in dataset:
-            dataset[file] = [rVSMScore, 0.0, 0.0]
-        else:
-            dataset[file][DataSetFieldEnum.rVSMScore] += rVSMScore
-
-        if dataset[file][DataSetFieldEnum.rVSMScore]> rVSMz_max:
-            rVSMz_max = dataset[file][DataSetFieldEnum.rVSMScore]
-
-        if dataset[file][DataSetFieldEnum.rVSMScore]< rVSMz_min:
-            rVSMz_min = dataset[file][DataSetFieldEnum.rVSMScore]
-    return rVSMz_max, rVSMz_min
 
 
 def save_ranks_to_file(bug_report, dataset):
@@ -122,8 +73,10 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     source_code_corpus = []
     cosine_similarity_calculator = CosineSimilarityCalculator()
     bug_similarity_score_calculator = BugSimilarityScoreCalculator()
+    rvsm_calculator =  RVSMCalculator()
+    rank_combinator = RankCombinator()
 
-    max_file_word_count, min_file_word_count = get_max_min_file_size(source_code_corpus, source_code_list)
+    max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_corpus, source_code_list)
 
     query = bug_report_corpus
     documents = source_code_corpus
@@ -132,7 +85,7 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     cosine_similarity = cosine_similarity_calculator.compute_cosine_similarity(query, documents)
 
     # 1: Cosine Similarity for a bug report with source code file size (rVSM)
-    rVSMz_max, rVSMz_min = get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
+    rVSMz_max, rVSMz_min = rvsm_calculator.get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
                                                             max_file_word_count, min_file_word_count)
 
     # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
@@ -140,7 +93,7 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
                                                                               bug_report_list)
 
     # 3: Combine 1 and 2
-    combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
+    rank_combinator.combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
 
     # print results in file
     first_file_pos_ranked, files_binary_relevance = save_ranks_to_file(current_bug_report, dataset)
