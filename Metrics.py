@@ -7,11 +7,11 @@ class Metrics:
         mean_reciprocal_rank = self.mean_reciprocal_rank(files_pos_ranked, bug_report_list_lenght)
         mean_average_precision = self.mean_average_precision(binary_relevance_list)
 
-        print("\n")
-        print("---- METRICS ---- ")
-        print("TOP N RANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
-        print("MRR (Mean Reciprocal Rank)     = ", mean_reciprocal_rank)
-        print("MAP (Mean Average Precision)   = ", mean_average_precision)
+        # print("\n")
+        # print("---- METRICS ---- ")
+        # print("TOP N RANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
+        # print("MRR (Mean Reciprocal Rank)     = ", mean_reciprocal_rank)
+        # print("MAP (Mean Average Precision)   = ", mean_average_precision)
 
     def mean_reciprocal_rank(self, rank_list, bug_report_size):
         sum_reciprocal_ranks = 0

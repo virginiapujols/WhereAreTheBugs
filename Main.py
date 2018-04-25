@@ -33,7 +33,7 @@ def save_ranks_to_file(bug_report, dataset):
 
     for key, value in sorted(dataset.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank], reverse=True):
         # rVSM - SemiScore - FinalScore - FileName"
-        print(value, key)
+        #print(value, key)
 
         count += 1
         if count > 10:  # 20
@@ -78,16 +78,13 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
 
     # Creating source code corpus
     source_code_corpus, max_file_word_count, min_file_word_count = DocumentSpaceCreator.get_source_code_corpus_max_min(source_code_list)
+    bug_report_corpus = current_bug_report.content_corpus
 
     # 0: Cosine Similarity (VSM)
-    bug_report_corpus = current_bug_report.content_corpus
-    cosine_similarity_calculator = VSMSimilarityCalculator()
-    cosine_similarity = cosine_similarity_calculator.VSMSimilarityCalculator(bug_report_corpus, source_code_corpus)
+    cosine_similarity = VSMSimilarityCalculator().VSMSimilarityCalculator(bug_report_corpus, source_code_corpus)
 
     # 1: Cosine Similarity for a bug report with source code file size (rVSM)
-    rvsm_calculator = RVSMCalculator()
-    #max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_list)
-    rVSMz_max, rVSMz_min = rvsm_calculator.get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
+    rVSMz_max, rVSMz_min = RVSMCalculator().get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
                                                             max_file_word_count, min_file_word_count)
 
     # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
@@ -153,13 +150,14 @@ def main():
     # top_n_rank_list = compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list,
     #                                          top_n_rank_list)
 
-    print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
+    #print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
     # METRICS....
     metric = Metrics()
     metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list,top_n_rank_list)
 
     ranks_file.close()
     e = int(time.time() - start_time)
+    # Elapase Time
     print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
 
 if __name__ == "__main__":

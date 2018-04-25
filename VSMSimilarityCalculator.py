@@ -1,4 +1,4 @@
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from FileSizeScoreCalculator import FileSizeScoreCalculator
@@ -9,12 +9,14 @@ class VSMSimilarityCalculator:
     def __init__(self,attr_analyzer__min_n=1, stop_words = StopWord.java_keywords + StopWord.english_words):
         self.count_vectorizer = CountVectorizer(min_df=attr_analyzer__min_n, stop_words=stop_words)
 
-    def VSMSimilarityCalculator(self, query_, document):
+    def VSMSimilarityCalculator_old(self, query_, document):
         # Attributes
         query = [query_]
 
-        # Create vocabulary index
+        # Learn Vocabulary
         self.count_vectorizer.fit(query)
+
+        # Create vocabulary index
         frequency_term_matrix_query = self.count_vectorizer.transform(query)
         frequency_term_matrix_documents = self.count_vectorizer.transform(document)
 
@@ -25,8 +27,22 @@ class VSMSimilarityCalculator:
         # Calculating similarity
         similarity = self.calculate_similarity(weight_matrix_query, weight_matrix_documents)
         similarity_score = similarity[0]
+        print("================frequency_term_matrix_query===================")
+        print(frequency_term_matrix_query.todense())
+
+        print("================frequency_term_matrix_documents===================")
+        print(frequency_term_matrix_documents.todense())
 
         #self.print_VSMSimilarityCalculator(frequency_term_matrix_query,self.count_vectorizer.stop_words,self.count_vectorizer.vocabulary_,frequency_term_matrix_documents)
+        return similarity_score
+
+    def VSMSimilarityCalculator(self, query_, document):
+        # Attributes
+        documents = [query_] + document
+        tfidf_vectorizer = TfidfVectorizer()
+        tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
+        similarity_score = cosine_similarity(tfidf_matrix[0:1],tfidf_matrix[1:])
+
         return similarity_score
 
     def calculate_weight(self,frequency_term_matrix_documents):
