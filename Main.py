@@ -47,13 +47,10 @@ def save_ranks_to_file(bug_report, dataset):
         top = ""
         if count == 1:
             top = " 1 "
-            top1_count += 1 if ranked else 0
         elif 1 < count <= 5:
             top = " 5 "
-            top5_count += 1 if ranked else 0
         elif count > 5:
             top = " 10 "
-            top10_count += 1 if ranked else 0
 
         ranks_file.write("TOP " + top + " | " if ranked else "")
         ranks_file.write(" | ".join(str(i) for i in value))
@@ -61,16 +58,42 @@ def save_ranks_to_file(bug_report, dataset):
         ranks_file.write(key)
         ranks_file.write("\n")
 
-        files_binary_relevance.append(1 if ranked else 0)
-
-        if not did_locate_bug and ranked and count <= 10:
-            did_locate_bug = True
-            rank_first_file = count
-
-        # print("[{0:.8f}|{0:.8f}|{0:.8f}]".format(value[DataSetField.rVSMScore],value[DataSetField.simi_score],value[DataSetField.final_rank]),key)
     ranks_file.write("\n")
     ranks_file.write("SUCCESSFULLY LOCATED BUG! " if did_locate_bug else "")
     ranks_file.write("\n +++++++++++++++++++++++++++++++++++++ \n")
+
+def calculate_rank_first_file_and_tops(bug_report, dataset):
+
+    rank_first_file = 0
+    top1_count = 0
+    top5_count = 0
+    top10_count = 0
+    files_binary_relevance = []
+    did_locate_bug = False
+    count = 0
+
+    for key, value in sorted(dataset.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank], reverse=True):
+        count += 1
+        ranked = False
+
+        # Evaluate if bug  is in list
+        for file_name in bug_report.fixed_files:
+            if file_name == key:
+                ranked = True
+
+        if not did_locate_bug and ranked:
+            did_locate_bug = True
+            rank_first_file = count
+
+        if count <= 10:
+            if count == 1:
+                top1_count += 1 if ranked else 0
+            elif 1 < count <= 5:
+                top5_count += 1 if ranked else 0
+            elif 5 < count <= 10:
+                top10_count += 1 if ranked else 0
+            files_binary_relevance.append(1 if ranked else 0)
+
     return rank_first_file, files_binary_relevance, [top1_count, top5_count, top10_count]
 
 
@@ -93,16 +116,20 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     # 3: Combine 1 and 2
     RankCombinator().combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
 
+
     # print results in file
-    first_file_pos_ranked, files_binary_relevance, top_n_rank = save_ranks_to_file(current_bug_report, dataset)
-    return first_file_pos_ranked, files_binary_relevance, top_n_rank
+
+    save_ranks_to_file(current_bug_report, dataset)
+
 
 
 def compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list, top_n_rank_list):
     dataset = {}
     current_bug_report = bug_report_list[0]
-    first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list,
-                                                                              bug_report_list, dataset)
+    localize_bugs(current_bug_report, source_code_list,bug_report_list, dataset)
+    first_file_pos_ranked, files_binary_relevance, top_n_rank = calculate_rank_first_file_and_tops(
+        current_bug_report,
+        dataset)
     files_pos_ranked.append(first_file_pos_ranked)
     binary_relevance_list.append(files_binary_relevance)
     top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
@@ -116,9 +143,11 @@ def computer_all_bug_reports( bug_report_list, source_code_list):
     for i in range(len(bug_report_list)):
         current_bug_report = bug_report_list[i]
         dataset = {}
+        localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
 
-        first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list,
-                                                                                  bug_report_list, dataset)
+        first_file_pos_ranked, files_binary_relevance, top_n_rank = calculate_rank_first_file_and_tops(
+            current_bug_report,
+            dataset)
 
         files_pos_ranked.append(first_file_pos_ranked)
         binary_relevance_list.append(files_binary_relevance)

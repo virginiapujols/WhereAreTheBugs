@@ -20,7 +20,7 @@ class Metrics:
             if i > 0:
                 sum_reciprocal_ranks += 1 / i
             count += 1
-            print('[{}] 1 / {}'.format(count,i))
+
 
         # if sum_reciprocal_ranks < 0:
         #    sum_reciprocal_ranks *= -1
