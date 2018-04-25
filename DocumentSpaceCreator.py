@@ -4,8 +4,6 @@ import re
 from nltk.stem import PorterStemmer
 import xml.etree.ElementTree as ET
 import os
-
-
 import fnmatch
 from SourceCodeFile import SourceCodeFile
 from BugReport import BugReport
@@ -17,9 +15,8 @@ first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
 
+
 class DocumentSpaceCreator:
-
-
 
     # Clean up the content of an input text.
     # Separates composed words, removes stop words and takes its root element
@@ -44,9 +41,9 @@ class DocumentSpaceCreator:
         return ' '.join(stemmed_words)
 
     def preprocess_content(self, content):
-        content = first_cap_re.sub(r'\1_\2', content)
-        content = all_cap_re.sub(r'\1_\2', content)
-        content = content.replace("_", " ")
+        content = first_cap_re.sub(r'\1___\2', content)
+        content = all_cap_re.sub(r'\1___\2', content)
+        content = content.replace("___", " ")
         content = content.lower()
         return content
 
