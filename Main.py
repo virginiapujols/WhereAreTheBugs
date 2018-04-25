@@ -23,7 +23,7 @@ def save_ranks_to_file(bug_report, dataset):
     ranks_file.write(bug_report.id)
     ranks_file.write("\n")
 
-    rank_first_file = 1000000
+    rank_first_file = 0
     top1_count = 0
     top5_count = 0
     top10_count = 0
