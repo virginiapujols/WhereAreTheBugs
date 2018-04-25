@@ -75,30 +75,27 @@ def save_ranks_to_file(bug_report, dataset):
 
 
 def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset):
-    bug_report_corpus = current_bug_report.content_corpus
     source_code_corpus = []
-    cosine_similarity_calculator = VSMSimilarityCalculator()
-    bug_similarity_score_calculator = BugSimilarityScoreCalculator()
-    rvsm_calculator =  RVSMCalculator()
-    rank_combinator = RankCombinator()
-
-    max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_corpus, source_code_list)
-
-    query = bug_report_corpus
-    documents = source_code_corpus
 
     # 0: Cosine Similarity (VSM)
+    query = current_bug_report.content_corpus
+    documents = source_code_corpus
+    cosine_similarity_calculator = VSMSimilarityCalculator()
     cosine_similarity = cosine_similarity_calculator.VSMSimilarityCalculator(query, documents)
 
     # 1: Cosine Similarity for a bug report with source code file size (rVSM)
+    rvsm_calculator = RVSMCalculator()
+    max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_corpus,source_code_list)
     rVSMz_max, rVSMz_min = rvsm_calculator.get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
                                                             max_file_word_count, min_file_word_count)
 
     # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
+    bug_similarity_score_calculator = BugSimilarityScoreCalculator()
     semi_score_max, semi_score_min = bug_similarity_score_calculator.get_similar_bug_report_cosine_similarity(dataset, current_bug_report,
                                                                               bug_report_list)
 
     # 3: Combine 1 and 2
+    rank_combinator = RankCombinator()
     rank_combinator.combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
 
     # print results in file
