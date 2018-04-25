@@ -1,5 +1,18 @@
 import numpy as np
+
+
 class Metrics:
+
+    def calculate(self,files_pos_ranked,bug_report_list_lenght,binary_relevance_list, top_n_rank_list):
+        mean_reciprocal_rank = self.mean_reciprocal_rank(files_pos_ranked, bug_report_list_lenght)
+        mean_average_precision = self.mean_average_precision(binary_relevance_list)
+
+        print("\n")
+        print("---- METRICS ---- ")
+        print("TOP N RANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
+        print("MRR (Mean Reciprocal Rank)     = ", mean_reciprocal_rank)
+        print("MAP (Mean Average Precision)   = ", mean_average_precision)
+
     def mean_reciprocal_rank(self, rank_list, bug_report_size):
         sum_reciprocal_ranks = 0
         for i in rank_list:
@@ -10,7 +23,6 @@ class Metrics:
 
         mean_rank = sum_reciprocal_ranks / bug_report_size
         return mean_rank
-
 
     def mean_average_precision(self, rs):
         """Score is mean average precision
@@ -32,7 +44,6 @@ class Metrics:
             Mean average precision
         """
         return np.mean([self.average_precision(r) for r in rs])
-
 
     def average_precision(self, r):
         """Score is average precision (area under PR curve)
@@ -58,7 +69,6 @@ class Metrics:
         if not out:
             return 0.
         return np.mean(out)
-
 
     def precision_at_k(self, r, k):
         """Score is precision @ k
@@ -93,11 +103,3 @@ class Metrics:
         if r.size != k:
             raise ValueError('Relevance score length < k')
         return np.mean(r)
-
-    def calculate(self,files_pos_ranked,bug_report_list_lenght,binary_relevance_list):
-        mean_reciprocal_rank = self.mean_reciprocal_rank(files_pos_ranked, bug_report_list_lenght)
-        mean_average_precision = self.mean_average_precision(binary_relevance_list)
-
-        print("---- METRICS ---- ")
-        print("MRR (Mean Reciprocal Rank)   = ", mean_reciprocal_rank)
-        print("MAP (Mean Average Precision) = ", mean_average_precision)
