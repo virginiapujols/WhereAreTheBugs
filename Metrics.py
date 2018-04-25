@@ -15,11 +15,14 @@ class Metrics:
 
     def mean_reciprocal_rank(self, rank_list, bug_report_size):
         sum_reciprocal_ranks = 0
+        count = 0
         for i in rank_list:
-            sum_reciprocal_ranks += 1 / i
+            sum_reciprocal_ranks += 1 / (i if i > 0 else -i)
+            count += 1
+            print('[{}] 1 / {}'.format(count,i))
 
         if sum_reciprocal_ranks < 0:
-            sum_reciprocal_ranks *= -1
+           sum_reciprocal_ranks *= -1
 
         mean_rank = sum_reciprocal_ranks / bug_report_size
         return mean_rank

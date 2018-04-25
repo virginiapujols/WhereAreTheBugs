@@ -109,7 +109,10 @@ def compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ran
     return top_n_rank_list
 
 
-def computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list, top_n_rank_list):
+def computer_all_bug_reports( bug_report_list, source_code_list):
+    top_n_rank_list = [0, 0, 0]
+    files_pos_ranked = []
+    binary_relevance_list = []
     for i in range(len(bug_report_list)):
         current_bug_report = bug_report_list[i]
         dataset = {}
@@ -120,7 +123,7 @@ def computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_r
         files_pos_ranked.append(first_file_pos_ranked)
         binary_relevance_list.append(files_binary_relevance)
         top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
-    return top_n_rank_list
+    return top_n_rank_list,files_pos_ranked, binary_relevance_list
 
 
 def main():
@@ -133,21 +136,21 @@ def main():
     print("BUG REPORTS = ", len(bug_report_list))
 
     # metrics
-    files_pos_ranked = []
-    binary_relevance_list = []
-    top_n_rank_list = [0, 0, 0]
+
+
 
     # FORM 1
     # Compute for each bug report
-    top_n_rank_list = computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_ranked,
-                                               source_code_list, top_n_rank_list)
-
+    top_n_rank_list, files_pos_ranked, binary_relevance_list = computer_all_bug_reports(bug_report_list, source_code_list)
     # Compute for ONE bug report
     # top_n_rank_list = compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list,
     #                                          top_n_rank_list)
 
     #print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
     # METRICS....
+    print("---top_n_rank_list ---")
+    print(files_pos_ranked)
+
     metric = Metrics()
     metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list,top_n_rank_list)
 
