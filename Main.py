@@ -122,8 +122,7 @@ def main():
     binary_relevance_list = []
     top_n_rank_list = [0, 0, 0]
 
-    # FORM 1
-    # Compute for each bug report
+    # TEST 1: Compute for each bug report
     for i in range(len(bug_report_list)):
         current_bug_report = bug_report_list[i]
         dataset = {}
@@ -133,27 +132,24 @@ def main():
         files_pos_ranked.append(first_file_pos_ranked)
         binary_relevance_list.append(files_binary_relevance)
         top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
-    # END FORM 1
+    # END TEST 2  **************************************
 
-    # FORM 2
-    # Compute for ONE bug report
+    # TEST 2: Compute for ONE bug report ***************
     # current_bug_report = bug_report_list[0]
     # first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
     #
     # files_pos_ranked.append(first_file_pos_ranked)
     # binary_relevance_list.append(files_binary_relevance)
     # top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
-    # END FORM 2
+    # END TEST 2  **************************************
 
-    print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
     # METRICS....
     metric = Metrics()
-    metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list)
-
+    metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list,top_n_rank_list)
 
     ranks_file.close()
     e = int(time.time() - start_time)
-    print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
+    print('\nELAPSED TIME: {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
 
 
 if __name__ == "__main__":

@@ -11,7 +11,8 @@ from SourceCodeFile import SourceCodeFile
 from BugReport import BugReport
 
 
-SOURCE_CODE_PATH = "G:\Team Drives\Team Evolution\swt_src"
+# SOURCE_CODE_PATH = "G:\Team Drives\Team Evolution\swt_src"
+SOURCE_CODE_PATH = "/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project/swt-3.1"
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
