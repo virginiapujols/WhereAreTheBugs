@@ -1,7 +1,7 @@
 
  +++++++++++++++++++++++++++++++++++++ 
 Bug ID: 75739
-0.32757357422774785 | 0.0 | 0.8 org.eclipse.swt.dnd.Clipboard.java
+0.3111720126531043 | 0.08333333333333333 | 0.8157240163978337 org.eclipse.swt.SWT.java
 0.0 | 1.0599497129094133 | 0.2 org.eclipse.swt.widgets.Table.java
 0.0 | 0.5101100286299702 | 0.09625174145852444 org.eclipse.swt.widgets.Tree.java
 0.0 | 0.4665063509461097 | 0.08802424214364193 org.eclipse.swt.widgets.TableColumn.java
@@ -13,4 +13,1556 @@ Bug ID: 75739
 0.0 | 0.25 | 0.0471720491935009 org.eclipse.swt.custom.CLabel.java
 
 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 77948
+0.18486909807218072 | 0.09084929911965212 | 0.8122268618586463 org.eclipse.swt.SWT.java
+0.0 | 1.486060776182028 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9264405919276594 | 0.12468407844097212 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7936750875106082 | 0.10681596610734995 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6690527774490455 | 0.09004379742367859 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6616384701304064 | 0.0890459503049776 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5697936666174398 | 0.07668510948540717 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.5585692071474171 | 0.07517447685854241 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.4805800019147109 | 0.06467837784527389 org.eclipse.swt.widgets.TreeItem.java
+0.0 | 0.47848319189837263 | 0.06439618077097584 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 78548
+0.4250617960880663 | 0.17944040605222733 | 0.8204681588054396 org.eclipse.swt.SWT.java
+0.0 | 1.7533614797295796 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.7524003605883183 | 0.19989036839780358 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.4546069093225915 | 0.16592207894825375 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1797481987465008 | 0.13456987761912656 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.9952453242146807 | 0.11352426019626907 org.eclipse.swt.widgets.Table.java
+0.0 | 0.925820099772552 | 0.1056051601995204 org.eclipse.swt.widgets.Slider.java
+0.0 | 0.6653978015958526 | 0.07589967149255233 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.601337794302955 | 0.06859256362763247 org.eclipse.swt.custom.CCombo.java
+0.0 | 0.5345224838248489 | 0.06097116766900665 org.eclipse.swt.custom.SashForm.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 78559
+0.3224580934638998 | 0.140512872118631 | 0.8145914852792907 org.eclipse.swt.SWT.java
+0.0 | 1.925957082903107 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.5396273713938418 | 0.15988179436200856 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0711955395410537 | 0.11123773723206527 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0338270815156494 | 0.10735722936850721 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.8444332596438895 | 0.08768972757908253 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.810894254323604 | 0.08420688721695668 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7289569104885776 | 0.07569814685483839 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6433610882154601 | 0.06680949372409531 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6099942813304187 | 0.06334453521788128 org.eclipse.swt.graphics.ImageDataLoader.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 79107
+0.474947853525781 | 0.20623947784607638 | 0.8274350329618265 org.eclipse.swt.SWT.java
+0.0 | 1.5034753421513394 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.1490485194281397 | 0.1528523265016044 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0192920074312182 | 0.13559144987009925 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.9001509836473038 | 0.1197426999180802 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.853553390593274 | 0.11354404913244737 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.5848572258603496 | 0.07780070739616801 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.5303300858899107 | 0.07054722761612513 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5000000000000001 | 0.06651256405503062 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.47140452079103173 | 0.062708646769889 org.eclipse.swt.widgets.Display.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 79481
+0.3134654228772735 | 0.20665258583745155 | 0.819749568301936 org.eclipse.swt.SWT.java
+0.0 | 2.092730156711263 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.9451017280660177 | 0.18589130775682572 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.6183108319065715 | 0.15466024864378655 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.4988090326059293 | 0.14323958851544588 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.3581577815944434 | 0.1297976977336434 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8412208527485185 | 0.0803945840844098 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.777952603295148 | 0.07434810463263021 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.7748442124648478 | 0.07405103902000626 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7746158247682591 | 0.07402921225023795 org.eclipse.swt.graphics.GC.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 80120
+0.43543524112871257 | 0.09245003270420488 | 0.8112953788025553 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.6369532057356235 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.1708069580144276 | 0.1430470894234614 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.7620324010931877 | 0.09310374889436637 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7547818108455057 | 0.09221788481196291 org.eclipse.swt.widgets.Table.java
+0.0 | 0.613686495110771 | 0.07497911277616381 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5547001962252293 | 0.06777227281533131 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.5547001962252293 | 0.06777227281533131 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5384615384615385 | 0.06578826280126458 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.3922322702763682 | 0.04792223368414549 org.eclipse.swt.widgets.Spinner.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 80276
+0.34304492721445795 | 0.24406947315553312 | 0.8332822008848455 org.eclipse.swt.SWT.java
+0.0 | 1.4666666666666668 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1326922160738446 | 0.15445802946461518 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8979468988004569 | 0.12244730438188048 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8 | 0.10909090909090909 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.8 | 0.10909090909090909 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.765685424949238 | 0.10441164885671426 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.682842712474619 | 0.09311491533744805 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6055555555555555 | 0.08257575757575757 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.6 | 0.08181818181818182 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 78854
+0.33928857740132884 | 0.19609031207089045 | 0.8310674219363852 org.eclipse.swt.SWT.java
+0.0 | 1.2623532938936013 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.211222781638237 | 0.1918991755314937 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1688759747160005 | 0.18518999084808035 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9356553518612527 | 0.148239855892532 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.9255491464352795 | 0.14663868679433104 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7277346227867212 | 0.11529809068618141 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.7275507839563777 | 0.11526896431858957 org.eclipse.swt.widgets.Control.java
+0.0 | 0.7265296132210579 | 0.11510717589687601 org.eclipse.swt.graphics.GC.java
+0.0 | 0.7084832550774722 | 0.11224801464132553 org.eclipse.swt.custom.CLabel.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 81265
+0.3906460857838996 | 0.1730361825394801 | 0.8225800288306107 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.5326480212895375 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2872537297387323 | 0.16797773681339626 org.eclipse.swt.widgets.Table.java
+0.0 | 1.2421057777437725 | 0.16208624034873853 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7134939561252818 | 0.09310604211982908 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6267754409900751 | 0.08178987377189442 org.eclipse.swt.widgets.Link.java
+0.0 | 0.6187471445843921 | 0.08074223644170975 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.45883146774112366 | 0.05987434314567184 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.45883146774112366 | 0.05987434314567184 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.45883146774112366 | 0.05987434314567184 org.eclipse.swt.widgets.CoolBar.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 80506
+0.3469775242983063 | 0.15988345647122548 | 0.8171093355548017 org.eclipse.swt.SWT.java
+0.0 | 1.8689616082297837 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.7116150827436314 | 0.18316214471251924 org.eclipse.swt.widgets.Table.java
+0.0 | 1.519412331605339 | 0.1625942796165272 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0970384180196104 | 0.11739550060192919 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8479496821165105 | 0.09074019266983867 org.eclipse.swt.graphics.GC.java
+0.0 | 0.8134334943674011 | 0.08704657075731559 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7720880321914485 | 0.0826221393517809 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.7688131761635095 | 0.08227169277080047 org.eclipse.swt.widgets.Control.java
+0.0 | 0.7405896090358335 | 0.0792514523331803 org.eclipse.swt.custom.CLabel.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 58185
+TOP  1  | 0.3324811404597933 | 0.09623120759129669 | 0.8227795492464504 org.eclipse.swt.SWT.java
+0.0 | 0.8448912359957446 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5882687811213112 | 0.13925313840615436 org.eclipse.swt.widgets.Table.java
+0.0 | 0.4868439467543106 | 0.1152441701399688 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.47916314829051754 | 0.11342599564920353 org.eclipse.swt.graphics.GC.java
+0.0 | 0.45388028924989265 | 0.1074411166580449 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.4380009996005374 | 0.10368222108123358 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.4055619548053241 | 0.0960033522722839 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.3928760706608426 | 0.09300038961768126 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.3531486605297547 | 0.08359624185556908 org.eclipse.swt.widgets.Combo.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 83251
+0.2239153161773422 | 0.0 | 0.8 org.eclipse.swt.SWT.java
+0.0 | 0.5345224838248489 | 0.2 org.eclipse.swt.widgets.Widget.java
+0.0 | 0.5345224838248489 | 0.2 org.eclipse.swt.widgets.FileDialog.java
+0.0 | 0.5345224838248489 | 0.2 org.eclipse.swt.widgets.TabFolder.java
+0.0 | 0.3779644730092273 | 0.1414213562373095 org.eclipse.swt.graphics.Image.java
+0.0 | 0.3779644730092273 | 0.1414213562373095 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.3779644730092273 | 0.1414213562373095 org.eclipse.swt.custom.TableCursor.java
+0.0 | 0.3779644730092273 | 0.1414213562373095 org.eclipse.swt.graphics.ImageDataLoader.java
+0.0 | 0.3779644730092273 | 0.1414213562373095 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.18898223650461365 | 0.07071067811865475 org.eclipse.swt.graphics.Device.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 82346
+0.4681485932930953 | 0.1132277034144596 | 0.8201421157621821 org.eclipse.swt.SWT.java
+0.0 | 1.1242880812655307 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9940535021748378 | 0.17683252517555872 org.eclipse.swt.widgets.Table.java
+TOP  5  | 0.0 | 0.8464890328558662 | 0.15058223011721944 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.7697507548990844 | 0.13693123101200735 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6878129552656482 | 0.12235528717718441 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.6316202918382534 | 0.11235915462650528 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.5894965376892696 | 0.10486574526801272 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5394286099534751 | 0.09595914409166001 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5205365530866631 | 0.0925984294880601 org.eclipse.swt.widgets.Tree.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 83699
+0.28789181520886464 | 0.16858057191793832 | 0.8214671280978361 org.eclipse.swt.SWT.java
+0.0 | 1.5705926861724215 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.4277790675545678 | 0.18181404766809472 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.362717808088078 | 0.17352911675770752 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9296326036776914 | 0.11837984626596375 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.9048380214428644 | 0.11522249268178882 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8108146327667588 | 0.10324951082546258 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.65376945152963 | 0.08325130471897008 org.eclipse.swt.widgets.Link.java
+0.0 | 0.5556729921523005 | 0.07075965615330747 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.501414061585148 | 0.06385029880752956 org.eclipse.swt.graphics.GC.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 79419
+0.22190329679315612 | 0.17944040605222733 | 0.8556209716700508 org.eclipse.swt.SWT.java
+0.0 | 0.6452257149216518 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+TOP  5  | 0.0 | 0.6452257149216518 | 0.2 org.eclipse.swt.widgets.Link.java
+0.0 | 0.445435403187374 | 0.1380711874576983 org.eclipse.swt.widgets.Control.java
+0.0 | 0.3914207426893701 | 0.12132831461526589 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.32071349029490936 | 0.09941125496954283 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.3144854510165756 | 0.09748075556931664 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.3006688971514775 | 0.09319805153394638 org.eclipse.swt.widgets.ImageList.java
+0.0 | 0.29152558682223123 | 0.09036390834411505 org.eclipse.swt.widgets.Table.java
+0.0 | 0.26726124191242445 | 0.08284271247461901 org.eclipse.swt.graphics.RGB.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 83262
+0.3808700461495238 | 0.19752679405542162 | 0.8208536921508675 org.eclipse.swt.SWT.java
+0.0 | 1.8944059653935712 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.0986526026370154 | 0.11598914094516857 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9309166673285902 | 0.09828058867363082 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7570504594162514 | 0.07992483905201078 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6446337734597691 | 0.0680565607621325 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6315107494277823 | 0.06667111072959307 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6141922686399943 | 0.0648427295796013 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5988822500598365 | 0.06322638980240079 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5918881904517963 | 0.06248799901016242 org.eclipse.swt.internal.win32.OS.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 80830
+0.3233052158040444 | 0.11331668394168086 | 0.8141356594612853 org.eclipse.swt.SWT.java
+0.0 | 1.6032741061997509 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8815419781509226 | 0.10996771852574183 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8063961410758702 | 0.10059367115798748 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7593569253397308 | 0.09472577675936382 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6851069263890963 | 0.08546348047908152 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.6719546519904243 | 0.08382280352336781 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6102297704147008 | 0.07612294966343987 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6096130508221022 | 0.07604601714264209 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5663521139548543 | 0.07064944313200215 org.eclipse.swt.widgets.Slider.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 82905
+0.3860343224060351 | 0.17014567241175255 | 0.8264458906684395 org.eclipse.swt.SWT.java
+0.0 | 1.2867456388209617 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.0287102652629163 | 0.1598933362160867 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9955820985273295 | 0.1547441962872439 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8762427750138426 | 0.13619518086212273 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7548263015340146 | 0.11732331220110573 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7167823596772709 | 0.11141010904595797 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5981328325479296 | 0.09296830927610458 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.4818332939483886 | 0.07489177027868381 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.42457946737677354 | 0.06599275794178149 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 84557
+0.3812938496439727 | 0.016666666666666666 | 0.8015611506088046 org.eclipse.swt.SWT.java
+0.0 | 2.13517729457613 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.8587483559396614 | 0.17410716764938772 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9737734478532142 | 0.09121242065722934 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7678119686475193 | 0.07192020733809307 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6699057100476056 | 0.06274942242495078 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6202200572599404 | 0.05809541519905166 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5236472211418475 | 0.049049530685066664 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5 | 0.0468345182641387 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.4880711874576984 | 0.04571715788637487 org.eclipse.swt.widgets.Control.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 86000
+0.2928111137697627 | 0.1495299842174876 | 0.8402985099532501 org.eclipse.swt.SWT.java
+0.0 | 0.7421117276591924 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6999999999999998 | 0.18865083892636395 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5807050663032287 | 0.15650071132413418 org.eclipse.swt.graphics.Image.java
+0.0 | 0.5774595168620382 | 0.15562603186005192 org.eclipse.swt.graphics.GC.java
+0.0 | 0.4949747468305832 | 0.13339628748136306 org.eclipse.swt.graphics.ImageDataLoader.java
+0.0 | 0.46454043267581496 | 0.12519420334215514 org.eclipse.swt.widgets.Display.java
+0.0 | 0.46449438894574 | 0.1251817945017181 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.42499999999999993 | 0.11453800934814956 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.3522255846260466 | 0.09492521718718958 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 84012
+0.33496619443022024 | 0.22537654268720977 | 0.827673775721385 org.eclipse.swt.SWT.java
+0.0 | 1.6288094906619477 | 0.2 org.eclipse.swt.widgets.Table.java
+TOP  5  | 0.0 | 1.4143263556934693 | 0.1736638156643706 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.2054015703978356 | 0.14801013590704962 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0954549167535876 | 0.13450988872963837 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.0086217112883322 | 0.12384772032221258 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8388207509978596 | 0.10299801859049373 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7296237046006117 | 0.08958981498862618 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.6936184648390051 | 0.08516876513988371 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6799940962189205 | 0.08349584160914622 org.eclipse.swt.layout.GridLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 87363
+0.364623722422087 | 0.2154857776139284 | 0.8216430685243085 org.eclipse.swt.SWT.java
+0.0 | 1.9912682656057368 | 0.2 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.8025613601988724 | 0.18104656126285823 org.eclipse.swt.widgets.Tree.java
+TOP  5  | 0.0 | 1.6868913230083558 | 0.16942883609860668 org.eclipse.swt.widgets.Table.java
+0.0 | 1.3216247433744228 | 0.1327420083172359 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.0485809658193803 | 0.10531790054921664 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0305761354388938 | 0.10350952237220495 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.8581391655287209 | 0.08619021157028062 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.7609752112050716 | 0.07643120963147432 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7299106493437193 | 0.07331113159900463 org.eclipse.swt.layout.GridLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 87676
+0.3346778896519892 | 0.15013061488894178 | 0.8165317371641463 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.816271495224861 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1902655657374546 | 0.13106692131289496 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9037383539249432 | 0.09951577793308451 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.7634413615167959 | 0.08406687695357781 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.552622850838904 | 0.0608524498998964 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5321581107019177 | 0.058598960794243427 org.eclipse.swt.widgets.Composite.java
+0.0 | 0.4743416490252569 | 0.05223246087078316 org.eclipse.swt.custom.TableCursor.java
+0.0 | 0.4472135954999579 | 0.049245236373055695 org.eclipse.swt.widgets.Slider.java
+0.0 | 0.4341215710622296 | 0.04780359898876063 org.eclipse.swt.custom.CLabel.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 86294
+0.4486987669668803 | 0.07666744326489552 | 0.8247462457688528 org.eclipse.swt.SWT.java
+0.0 | 0.6196288841630617 | 0.2 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6016544757453629 | 0.1941983310084142 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.5985186990655299 | 0.19318618429931797 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5239186394286243 | 0.1691072359017885 org.eclipse.swt.widgets.Widget.java
+TOP  10  | 0.0 | 0.49279927982674443 | 0.15906272041929514 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.4082482904638631 | 0.13177187213126376 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.4060636741901671 | 0.13106673512763722 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.3809079881807794 | 0.12294713752580314 org.eclipse.swt.widgets.FileDialog.java
+TOP  10  | 0.0 | 0.35355339059327384 | 0.11411778876990913 org.eclipse.swt.widgets.Combo.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 87855
+0.21512774990077888 | 0.09724499619412227 | 0.8173037309080695 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.1239772129000525 | 0.2 org.eclipse.swt.widgets.Tree.java
+TOP  5  | 0.0 | 0.9843694439224513 | 0.17515825634624935 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9287015607235114 | 0.16525273823431053 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6762841156872319 | 0.12033769153420892 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6502811870974962 | 0.11571074211009316 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6367784066109965 | 0.11330806342025385 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.49850713125926327 | 0.08870413484149381 org.eclipse.swt.widgets.TreeItem.java
+0.0 | 0.49798442093258044 | 0.08861112400093876 org.eclipse.swt.widgets.Control.java
+0.0 | 0.44733907405904383 | 0.0795993137449527 org.eclipse.swt.widgets.Spinner.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 89533
+0.3203995056113321 | 0.0 | 0.8 org.eclipse.swt.SWT.java
+0.0 | 0.4714045207910317 | 0.2 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.4714045207910317 | 0.2 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.41666666666666663 | 0.17677669529663687 org.eclipse.swt.widgets.Link.java
+0.0 | 0.41666666666666663 | 0.17677669529663687 org.eclipse.swt.graphics.GC.java
+0.0 | 0.375 | 0.1590990257669732 org.eclipse.swt.widgets.Table.java
+0.0 | 0.3333333333333333 | 0.1414213562373095 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.3333333333333333 | 0.1414213562373095 org.eclipse.swt.graphics.RGB.java
+0.0 | 0.3333333333333333 | 0.1414213562373095 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.3333333333333333 | 0.1414213562373095 org.eclipse.swt.widgets.Spinner.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 90018
+0.3404781836080154 | 0.1846693534563255 | 0.8231610329905485 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.5946555883900742 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.2559097367604264 | 0.1575148572399088 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.035903208100714 | 0.1299218734932647 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9118949666174038 | 0.11436889234973065 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8032906134334254 | 0.10074785041758244 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7149799852112723 | 0.08967202578621994 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5588673750444507 | 0.0700925490260464 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5147120609333742 | 0.06455463671036517 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5125692857821982 | 0.06428589214046851 org.eclipse.swt.graphics.TextLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 87997
+0.40528326386670105 | 0.19783904170674332 | 0.8178972715141252 org.eclipse.swt.SWT.java
+0.0 | 2.2108290814116853 | 0.2 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.4019825952687 | 0.1268286731938128 org.eclipse.swt.widgets.Table.java
+TOP  5  | 0.0 | 1.3692503426221772 | 0.12386758923470167 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1413545864365018 | 0.1032512731113262 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.085111618032895 | 0.09816332046256751 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.9508058567962969 | 0.08601351093040416 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6919367023612115 | 0.06259522350044244 org.eclipse.swt.widgets.Link.java
+0.0 | 0.670717730660138 | 0.06067567468687929 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6286052106365712 | 0.056866016095209554 org.eclipse.swt.custom.SashForm.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 88829
+0.32711612577403026 | 0.10814761408717506 | 0.8144941356504459 org.eclipse.swt.SWT.java
+0.0 | 1.492294769351738 | 0.2 org.eclipse.swt.widgets.Tree.java
+TOP  5  | 0.0 | 1.444130776905722 | 0.19354497604157136 org.eclipse.swt.widgets.Table.java
+0.0 | 1.1564594916090225 | 0.15499075857665784 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9190060152252739 | 0.12316682120711256 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6882472016116855 | 0.09224011445281206 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6112125095997275 | 0.08191578797334281 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5762566803786868 | 0.07723094554958687 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.553858576132087 | 0.0742291117689418 org.eclipse.swt.widgets.Link.java
+0.0 | 0.5218941593402999 | 0.0699451837611163 org.eclipse.swt.widgets.Display.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 86631
+0.3258870669030537 | 0.15778821040104293 | 0.8299377819140163 org.eclipse.swt.SWT.java
+0.0 | 1.0541075544889962 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7054124852471192 | 0.13384070387183303 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6385354314023991 | 0.12115185564948246 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5954874896767456 | 0.11298419921967495 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5841178893751221 | 0.11082699993707706 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5315859494794495 | 0.10085990698304946 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5163977794943223 | 0.09797819535496233 org.eclipse.swt.graphics.ImageDataLoader.java
+0.0 | 0.4879500364742666 | 0.09258069243433363 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.4300147885094182 | 0.08158840844620988 org.eclipse.swt.widgets.Tree.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 81242
+0.11054494289867983 | 0.044187483200409425 | 0.8148149104211382 org.eclipse.swt.SWT.java
+0.0 | 0.5965271735610645 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.5062798162732677 | 0.1697424153374101 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.44156511138893884 | 0.1480452629686407 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.41186894849866273 | 0.13808891421993238 org.eclipse.swt.widgets.Table.java
+0.0 | 0.3836744192462953 | 0.12863602405767682 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.2726801505579742 | 0.09142254121640975 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.2615100640246964 | 0.08767750259005644 org.eclipse.swt.widgets.CoolBar.java
+TOP  10  | 0.0 | 0.26038690306102935 | 0.08730093601825648 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.2529316232502928 | 0.08480137517973471 org.eclipse.swt.custom.CTabFolder.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92017
+0.37182676151233196 | 0.313346022737659 | 0.8469486331222973 org.eclipse.swt.SWT.java
+0.0 | 1.3348462006185295 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8338597159546451 | 0.1249371973442721 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7680392237943245 | 0.11507531331151666 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7521709969795636 | 0.11269777696202439 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6952142267404446 | 0.10416394434329622 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.6395365410711016 | 0.0958217569596795 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5388159060803248 | 0.08073078468974972 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5388159060803248 | 0.08073078468974972 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5297199295204975 | 0.07936793456430269 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 88717
+0.32565387027702963 | 0.16212636480665202 | 0.822184351510534 org.eclipse.swt.SWT.java
+0.0 | 1.4616281637051034 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.3098278892978192 | 0.17922860571836774 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8027569880330259 | 0.1098442145501774 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6821267919539197 | 0.09333793763590134 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6785598620903052 | 0.09284986139979863 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5995638869055075 | 0.08204054927152798 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.5394226792712186 | 0.07381120488316643 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.4781519629620731 | 0.06542730563565476 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4701942055754776 | 0.06433841619247062 org.eclipse.swt.custom.SashForm.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92612
+0.3228880423894217 | 0.03333333333333333 | 0.805100329721012 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.3071050366022037 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.009701177914375 | 0.15449426781172465 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8870841345151224 | 0.13573264728916995 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7222222222222221 | 0.11050714395525947 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5273589059632077 | 0.08069112905173526 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.44879148583136896 | 0.06866953661168569 org.eclipse.swt.graphics.GC.java
+0.0 | 0.4452340867985053 | 0.06812521937118128 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.38888888888888884 | 0.05950384674513973 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.3523689270621825 | 0.05391593134369052 org.eclipse.swt.graphics.TextLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92181
+0.37652557582624413 | 0.09027777777777778 | 0.8111318245998884 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.6219762891104617 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.4337581506879062 | 0.17679150556192413 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.3013544472644316 | 0.16046528620688183 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5711142625940433 | 0.07042202360519817 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.5649571463366638 | 0.06966281198185734 org.eclipse.swt.graphics.Image.java
+0.0 | 0.5604376784962252 | 0.06910553283162793 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5 | 0.06165318239938197 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.47710434516289174 | 0.05883000243173092 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.4368867239266071 | 0.05387091375623109 org.eclipse.swt.widgets.Spinner.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 91159
+0.4864906219032167 | 0.17900855677136135 | 0.8237813869304511 org.eclipse.swt.SWT.java
+0.0 | 1.505450941905734 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.3337148915516344 | 0.17718476961637808 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1524597711133588 | 0.1531049254457236 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1312379516531 | 0.15028559485586135 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.059407109571608 | 0.14074282729273344 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.9342958736407164 | 0.12412172959392505 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8280684203576836 | 0.11000935298621434 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.803759422908426 | 0.10677988907309802 org.eclipse.swt.graphics.GC.java
+0.0 | 0.7212460018915303 | 0.09581793492101615 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 79268
+0.29210704438330587 | 0.14166666666666666 | 0.8344015292379052 org.eclipse.swt.SWT.java
+0.0 | 0.8236067977499789 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.6720107820951421 | 0.16318728401247204 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.5009757248121616 | 0.1216541014913386 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.4708263185640509 | 0.11433279080510428 org.eclipse.swt.widgets.Table.java
+0.0 | 0.4302629551223364 | 0.10448261386326019 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.4023689270621825 | 0.09770898641473552 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.4023689270621825 | 0.09770898641473552 org.eclipse.swt.widgets.Link.java
+0.0 | 0.4 | 0.09713372961290867 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.3634800381732936 | 0.08826542936903606 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 94467
+0.329730059661657 | 0.2194160968212877 | 0.8257883001305633 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.7016716550560447 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.3303934872921768 | 0.15636312485305637 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2279239230968657 | 0.14431972460120976 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9629861445882282 | 0.11318119353131169 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8047378541243652 | 0.09458203663830331 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7904401145198809 | 0.09290160204188719 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7043285867195542 | 0.08278078613190007 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.5690355937288493 | 0.06687959948537875 org.eclipse.swt.widgets.Link.java
+0.0 | 0.5260994206616211 | 0.06183324721881132 org.eclipse.swt.graphics.TextLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 94598
+0.3409542372947064 | 0.1612322566394843 | 0.8279807126615577 org.eclipse.swt.SWT.java
+0.0 | 1.1524528241269532 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0270429607911602 | 0.17823600919529217 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9786578840620076 | 0.16983912288182298 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.84168667968774 | 0.14606874347769755 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5842687430275205 | 0.10139568940188706 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5578595800075202 | 0.09681256678426378 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.4036648508356454 | 0.07005316701643625 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.40283787337140886 | 0.06990965095279815 org.eclipse.swt.widgets.Link.java
+0.0 | 0.37952198522430713 | 0.06586334421312492 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 93724
+0.45108741287959236 | 0.11132724184661325 | 0.8188974226117323 org.eclipse.swt.SWT.java
+0.0 | 1.1782267257704968 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1373181810970772 | 0.1930559129616301 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9499062008226189 | 0.1612433634454237 org.eclipse.swt.custom.CTabFolder.java
+TOP  5  | 0.0 | 0.7378940193533878 | 0.1252550130147226 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.6919750031199958 | 0.11746041538269834 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6060505684833108 | 0.1028750333408006 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5789681313496351 | 0.0982778812746793 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5527707983925668 | 0.0938309726476599 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5456267707269556 | 0.09261829812426724 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 97651
+0.3520207823006888 | 0.19758458170931462 | 0.8207438047463124 org.eclipse.swt.SWT.java
+0.0 | 1.9049984718395476 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.8724451146990928 | 0.19658232196805703 org.eclipse.swt.widgets.Table.java
+TOP  5  | 0.0 | 1.860129426952217 | 0.19528933534062073 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.5226370205535686 | 0.1598570332797428 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.3479325097623964 | 0.14151533764337096 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.9197669464243283 | 0.09656353640390716 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.8957171486970548 | 0.09403862123124038 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.8876493152646074 | 0.09319160391844887 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7451572833267861 | 0.07823179853863405 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 97678
+0.43519914113771 | 0.08333333333333333 | 0.8109034932649997 org.eclipse.swt.SWT.java
+0.0 | 1.5285621095550115 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1295230295088023 | 0.1477889609389342 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8008638320899774 | 0.10478656079249818 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.75 | 0.09813143938499652 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.75 | 0.09813143938499652 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7190416063882341 | 0.09408078375010336 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5 | 0.06542095958999768 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.47619047619047616 | 0.06230567579999779 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.47140452079103173 | 0.061679472210424614 org.eclipse.swt.widgets.Control.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 97745
+0.4029613865353753 | 0.14991121763776144 | 0.8189319864477792 org.eclipse.swt.SWT.java
+0.0 | 1.5836818608682954 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.3518132347229748 | 0.17071777711488184 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.2419205318810589 | 0.15683964848850931 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8698774456428453 | 0.10985507470116657 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6308317237759666 | 0.07966647081884193 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5771074237582854 | 0.07288173692181725 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.563436169819011 | 0.07115522173248764 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.5318157437514387 | 0.06716194166167398 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.48966231712036334 | 0.06183847011443233 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 97177
+0.345974749427339 | 0.12009581773338375 | 0.8097831011107811 org.eclipse.swt.SWT.java
+0.0 | 2.45516869085687 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.5259896960501764 | 0.12430833789409364 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1643694305907086 | 0.09485046261194674 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9045340337332909 | 0.07368406391803593 org.eclipse.swt.widgets.Link.java
+0.0 | 0.8555295019560878 | 0.06969211566945344 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.8032906134334254 | 0.06543669414039911 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7279127772889845 | 0.05929635548056278 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.7030631127788327 | 0.05727208198744658 org.eclipse.swt.widgets.Control.java
+0.0 | 0.6426324907467403 | 0.05234935531231928 org.eclipse.swt.custom.CLabel.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 99376
+0.3490639143876419 | 0.01333333333333333 | 0.8013100563243178 org.eclipse.swt.SWT.java
+0.0 | 2.0355358904551757 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.6293518269009597 | 0.16009069990277724 org.eclipse.swt.widgets.Table.java
+0.0 | 1.4799999999999998 | 0.14541625199927574 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8292528739883944 | 0.08147759790204057 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6133333333333332 | 0.06026259091861877 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5285468820183672 | 0.05193196391149618 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.49831276631254406 | 0.04896133432470346 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.48989794855663554 | 0.04813454293327024 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.4828427124746189 | 0.04744133618461016 org.eclipse.swt.widgets.Spinner.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 100040
+0.20594825007772743 | 0.16080192168566967 | 0.8313275973539441 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.0265831743743674 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9207506071152269 | 0.1793815893537047 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 0.7893129962536493 | 0.1537747775253928 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6107492162463682 | 0.11898679648993436 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.5634301577239558 | 0.10976804837412774 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5630759684731502 | 0.10969904485650794 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.408161267670971 | 0.0795184019881716 org.eclipse.swt.graphics.GC.java
+0.0 | 0.39924299396942353 | 0.07778093464520983 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.3950965320645026 | 0.07697311663135081 org.eclipse.swt.widgets.CoolBar.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 78634
+0.42428834481445554 | 0.18581708529456598 | 0.8249071941960588 org.eclipse.swt.SWT.java
+0.0 | 1.492075613430347 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8774192718807431 | 0.11761056396646252 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7797722396268165 | 0.10452181278321225 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.6746926176511564 | 0.09043678639047101 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.6436421020017518 | 0.08627472980702239 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6246950475544243 | 0.08373503888562633 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5455115967939073 | 0.07312117320110237 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5289305003310734 | 0.07089861875230828 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5002956696720668 | 0.06706036412214597 org.eclipse.swt.widgets.TableColumn.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 94603
+0.4398189073390313 | 0.22253683612447728 | 0.8197902366975003 org.eclipse.swt.SWT.java
+0.0 | 2.2489557808329472 | 0.2 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.7442129589787738 | 0.1551131395151548 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.3417127931759387 | 0.11931873490896364 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0315795872130336 | 0.09173853892591582 org.eclipse.swt.widgets.Table.java
+0.0 | 1.0257647694079615 | 0.09122142624147535 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7593650118172344 | 0.06753045286964138 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.7279127772889845 | 0.06473340058463817 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6991974111387212 | 0.06217973844552507 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.6945251647686728 | 0.06176423482292223 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 96916
+0.522763620267046 | 0.3477016611057334 | 0.8221788928689311 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 3.1354284739145486 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 2.171809083990767 | 0.1385334796860658 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.2492209615335221 | 0.07968422637776734 org.eclipse.swt.widgets.Table.java
+0.0 | 1.0261165900176445 | 0.0654530376664309 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9855985596534889 | 0.06286850858523842 org.eclipse.swt.custom.CTabFolder.java
+TOP  10  | 0.0 | 0.8932419564820296 | 0.056977345451406626 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8660254037844388 | 0.055241279524594955 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.8588662107903636 | 0.05478461511310309 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7955466250846048 | 0.05074564013838743 org.eclipse.swt.widgets.Link.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 102794
+0.3528020638738429 | 0.21829230296925153 | 0.8224765876769321 org.eclipse.swt.SWT.java
+0.0 | 1.9423971832991975 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.7439419367954396 | 0.17956594581066287 org.eclipse.swt.widgets.Table.java
+0.0 | 1.4529050575332993 | 0.14959917261262842 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2929900803668513 | 0.1331334385659151 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.2561025169923166 | 0.1293352902065893 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0894770140550407 | 0.11217860316339051 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.9206939377782876 | 0.09479976038829216 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.803009925236746 | 0.08268236096520887 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.6499902939739439 | 0.0669266100221504 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 100387
+0.39174455472476427 | 0.18809114700306118 | 0.8191059000395509 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.9689325979273054 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.384221727999077 | 0.1406063091703847 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.2158197071096497 | 0.12350038882890585 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1589588788732978 | 0.11772458641736477 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8893735147885509 | 0.09034067653964327 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.879381692281644 | 0.08932572838779436 org.eclipse.swt.graphics.GC.java
+0.0 | 0.8327173112736878 | 0.08458565947359387 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6880911470030612 | 0.069894840252776 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6570657064356591 | 0.06674334176064249 org.eclipse.swt.custom.CLabel.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 104966
+0.382818075033218 | 0.2419798546110012 | 0.8283800183176178 org.eclipse.swt.SWT.java
+0.0 | 1.7052832870145493 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.5215410389563142 | 0.1784502376282695 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.3967686770518135 | 0.16381661483320412 org.eclipse.swt.widgets.Table.java
+0.0 | 1.0047814600776248 | 0.11784334810865382 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.0001299429838044 | 0.11729780624716478 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8214285714285714 | 0.0963392508076065 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.8013759927998608 | 0.09398743292709272 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6798001605614067 | 0.07972870733419751 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6166625940189214 | 0.07232377150643594 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 90258
+0.3618256425582458 | 0.22587958768769573 | 0.8177357193174492 org.eclipse.swt.SWT.java
+0.0 | 2.5471714300921064 | 0.2 org.eclipse.swt.widgets.Tree.java
+TOP  5  | 0.0 | 2.1092799074543813 | 0.16561742822139847 org.eclipse.swt.widgets.Table.java
+0.0 | 1.2219452577297296 | 0.09594527037275569 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.105313640217857 | 0.08678753437320774 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0004420707362054 | 0.07855317933587447 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.847596774322652 | 0.06655200072591916 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.6993155999150158 | 0.05490918998645712 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.67605502842528 | 0.05308280553388853 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6270279863762257 | 0.049233277271294784 org.eclipse.swt.custom.SashForm.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 107145
+0.43302372250157006 | 0.25782660472784524 | 0.8393894094074341 org.eclipse.swt.SWT.java
+0.0 | 1.3091163772523338 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.2909393402433702 | 0.19722300670516174 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2543973634291743 | 0.1916403133023196 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8730185756028641 | 0.1333752431445732 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7489268986865183 | 0.11441716133112921 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7325072333239767 | 0.11190865014788294 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6506644505296378 | 0.09940513491937188 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.5991797909864738 | 0.0915395760679543 org.eclipse.swt.widgets.Control.java
+0.0 | 0.5582261873087676 | 0.08528289722880289 org.eclipse.swt.widgets.TabFolder.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92013
+0.4279723854759796 | 0.18745913109359744 | 0.821398726802112 org.eclipse.swt.SWT.java
+0.0 | 1.7520587353364938 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8748511583793993 | 0.09986550573161906 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.7570006063452789 | 0.08641269736883475 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6709671229535881 | 0.07659185270689281 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6030226891555274 | 0.06883589881930678 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.5435475475341739 | 0.06204672669604107 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.426401432711221 | 0.04867433084420289 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.4145780987944251 | 0.04732468043827341 org.eclipse.swt.dnd.TreeDragUnderEffect.java
+0.0 | 0.41278338841003365 | 0.04711981169178738 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 96053
+0.30097941687461505 | 0.1907589702238757 | 0.819666858104283 org.eclipse.swt.SWT.java
+0.0 | 1.939902847850752 | 0.2 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.0841159075058373 | 0.11177012381903001 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0085758139715926 | 0.10398209529812373 org.eclipse.swt.widgets.Table.java
+0.0 | 0.966819129418651 | 0.09967706686856043 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9419409016382148 | 0.09711217267213207 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8511990009742264 | 0.08775686905323973 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.8491435755594319 | 0.0875449589138148 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7785620486416297 | 0.08026814842858863 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6255432421712246 | 0.06449222370741643 org.eclipse.swt.widgets.Slider.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 105772
+0.3968312485131396 | 0.1834391956944166 | 0.8223817847093753 org.eclipse.swt.SWT.java
+0.0 | 1.6391829166114529 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.3979439306587556 | 0.17056594678873416 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.2903610599307718 | 0.15743954464804066 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.1498772213211077 | 0.14029882933359916 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.85399193677587 | 0.10419727147245493 org.eclipse.swt.graphics.GC.java
+0.0 | 0.7115585331838863 | 0.08681868581876541 org.eclipse.swt.widgets.Link.java
+0.0 | 0.60529072670912 | 0.07385273730894992 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5735641809475689 | 0.06998171773693819 org.eclipse.swt.widgets.Table.java
+TOP  10  | 0.0 | 0.5163977794943223 | 0.06300673027532872 org.eclipse.swt.custom.CLabel.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 84609
+0.3247451947778834 | 0.1493297783968401 | 0.8150533141904084 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.9840119791293538 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.8657759982414404 | 0.18808112227832424 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9087669574531279 | 0.09160901920077348 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8009075554473128 | 0.08073616126035449 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5875393743832394 | 0.059227401907227396 org.eclipse.swt.widgets.Display.java
+0.0 | 0.5270462766947298 | 0.05312934420144118 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5268411532725308 | 0.053108666561955446 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5116672736016927 | 0.05157905083075438 org.eclipse.swt.custom.CLabel.java
+TOP  10  | 0.0 | 0.5024244390100857 | 0.050647319098402345 org.eclipse.swt.widgets.TableColumn.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 99266
+0.35916436901478754 | 0.12767205771423776 | 0.8158554760161651 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.6104474893604237 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.219415043830865 | 0.1514380384193894 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1035533905932737 | 0.13704928572760122 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.5303300858899107 | 0.06586120806714749 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4689156559565643 | 0.05823420621342834 org.eclipse.swt.widgets.FileDialog.java
+TOP  10  | 0.0 | 0.46233292380687907 | 0.05741670273154834 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.43444241600488226 | 0.053953006089930644 org.eclipse.swt.widgets.Display.java
+0.0 | 0.4330127018922194 | 0.0537754512025955 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.43301270189221935 | 0.053775451202595484 org.eclipse.swt.custom.TableCursor.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 113971
+0.18775183091801 | 0.03681862707465076 | 0.8055186249673345 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.334340611749695 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9169757635793666 | 0.13744253236464926 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8303088390388956 | 0.12445230726360457 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.7804914804249257 | 0.11698534445436422 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.5337079973023824 | 0.0799957660889211 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.48445221494456936 | 0.07261297612898353 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.4748577319317088 | 0.07117489009182403 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.3763253728340295 | 0.056406193369256945 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.37596412891539643 | 0.05635204768629533 org.eclipse.swt.widgets.Widget.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 112358
+0.29585283052704225 | 0.0 | 0.8 org.eclipse.swt.SWT.java
+0.0 | 0.8278950396185307 | 0.2 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5303300858899107 | 0.1281152949374527 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5000000000000001 | 0.12078825843198315 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.4419417382415922 | 0.10676274578121057 org.eclipse.swt.widgets.Link.java
+0.0 | 0.3535533905932738 | 0.08541019662496846 org.eclipse.swt.widgets.Control.java
+0.0 | 0.3535533905932738 | 0.08541019662496846 org.eclipse.swt.widgets.Table.java
+0.0 | 0.3535533905932738 | 0.08541019662496846 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.3535533905932738 | 0.08541019662496846 org.eclipse.swt.widgets.ImageList.java
+0.0 | 0.3535533905932738 | 0.08541019662496846 org.eclipse.swt.custom.CTabFolder.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 82277
+0.2992327047123102 | 0.0964071013870633 | 0.8276664832664927 org.eclipse.swt.SWT.java
+0.0 | 0.6969234250586762 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6174604022694503 | 0.17719605341647526 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6106504100245026 | 0.17524175198246206 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5163977794943225 | 0.14819354922697436 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.4592793267718461 | 0.13180194846605361 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.4330127018922195 | 0.12426406871192852 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4082482904638632 | 0.117157287525381 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.3979111859645629 | 0.11419079102731021 org.eclipse.swt.widgets.Table.java
+TOP  10  | 0.0 | 0.35355339059327395 | 0.10146118723545766 org.eclipse.swt.widgets.CoolBar.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92341
+0.491263386483299 | 0.22720489600891067 | 0.818920175850585 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 2.401720764153332 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.7777939857269747 | 0.1480433539370005 org.eclipse.swt.widgets.Table.java
+0.0 | 1.541254469420609 | 0.12834585039397292 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.6597029053720156 | 0.0549358539275966 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5527707983925667 | 0.046031229495359975 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.5391237479311292 | 0.04489479010031244 org.eclipse.swt.widgets.Control.java
+0.0 | 0.44364515548150396 | 0.03694394136929571 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.44364515548150396 | 0.03694394136929571 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.4282124590607531 | 0.035658804757988515 org.eclipse.swt.widgets.Widget.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 117574
+0.3472717105740234 | 0.21589171565542772 | 0.8227120057507219 org.eclipse.swt.SWT.java
+0.0 | 1.9011241721666663 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.795478141784633 | 0.18888594107331444 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.533651148623078 | 0.16134150215713813 org.eclipse.swt.widgets.Table.java
+0.0 | 1.2101465340847968 | 0.12730852111628474 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8900643382319098 | 0.09363558164825442 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7772207653653714 | 0.08176433467568732 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.7292928985449756 | 0.0767222792937105 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.7186678763403277 | 0.075604517249526 org.eclipse.swt.layout.GridLayout.java
+TOP  10  | 0.0 | 0.7073282976710767 | 0.0744115832123634 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 93380
+0.3243477036932911 | 0.1464635380089731 | 0.826014783603226 org.eclipse.swt.SWT.java
+0.0 | 1.1260023549902667 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0896083422772125 | 0.1935357128603219 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.040534606804807 | 0.18481925942575875 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9512186012323607 | 0.16895499321412755 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.850312881438295 | 0.15103216750299697 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6035370780859401 | 0.10719996728446579 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5315434235964449 | 0.09441248879111619 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5033107711951934 | 0.0893978185684246 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.47081111899605504 | 0.0836252458815017 org.eclipse.swt.dnd.DropTarget.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 103976
+0.41225131345145555 | 0.17935706248589947 | 0.8248106409907757 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.4458075674270783 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.4039996257441105 | 0.1942166658101855 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.0854687805320369 | 0.1501539769173721 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8316219849163553 | 0.11503909699356303 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.7572354960285466 | 0.10474913993929402 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6666666666666667 | 0.09222066361888664 org.eclipse.swt.widgets.Link.java
+0.0 | 0.5898517878781916 | 0.08159478497237037 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5633989004276797 | 0.07793553071938748 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.5222222222222223 | 0.07223951983479453 org.eclipse.swt.graphics.TextLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 106289
+0.32978027325796266 | 0.055603843748553275 | 0.8046151698193889 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 2.409612037024296 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.6303354726923245 | 0.13531933337332394 org.eclipse.swt.widgets.Table.java
+0.0 | 1.4890233769086072 | 0.12359030034954904 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.6255432421712244 | 0.05192066046812473 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5595028849441883 | 0.04643925049736518 org.eclipse.swt.layout.GridLayout.java
+0.0 | 0.5315111870143242 | 0.044115914001716536 org.eclipse.swt.dnd.TreeDragUnderEffect.java
+0.0 | 0.5033983263668691 | 0.04178252088983844 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.5033983263668691 | 0.04178252088983844 org.eclipse.swt.widgets.Link.java
+0.0 | 0.48305839256555655 | 0.040094287805940765 org.eclipse.swt.widgets.Shell.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 104150
+0.36934789652308936 | 0.17166262259800358 | 0.8150401520056357 org.eclipse.swt.SWT.java
+0.0 | 2.282724569986788 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 2.094538037701588 | 0.18351211225747757 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8986023617975992 | 0.07873068644482152 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.7897442152433368 | 0.06919312348295334 org.eclipse.swt.widgets.TableColumn.java
+0.0 | 0.7731932491865092 | 0.06774301721306521 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6438792237454423 | 0.05641322060586301 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.541582799648076 | 0.047450560332051854 org.eclipse.swt.widgets.Display.java
+0.0 | 0.513867799697011 | 0.045022321698669515 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.49453457887698826 | 0.04332844929073949 org.eclipse.swt.widgets.Shell.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 81264
+0.3749840691089472 | 0.18310716903566812 | 0.8195723142702273 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.8710834754396393 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 1.7224493398391354 | 0.18411250619745012 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 1.63283288720563 | 0.17453340897278474 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2065340062776537 | 0.12896634726509573 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.2025380482105894 | 0.1285392195479718 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8262982979218204 | 0.08832297529939644 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.8177996407825672 | 0.08741455434963027 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6869809049812827 | 0.07343134755865087 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6827120913725282 | 0.07297505432910893 org.eclipse.swt.custom.CTabFolder.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 99145
+0.32798073802942934 | 0.21237894904138366 | 0.8158252962923228 org.eclipse.swt.SWT.java
+0.0 | 2.684043889205582 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.6356282388039514 | 0.1218779056022114 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.5021000255904071 | 0.1119281269305172 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.1958018331765041 | 0.08910449176972551 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7690922087073794 | 0.0573084674062475 org.eclipse.swt.graphics.TextLayout.java
+TOP  10  | 0.0 | 0.6913177236047556 | 0.0515131459947453 org.eclipse.swt.widgets.Link.java
+0.0 | 0.6533833405689828 | 0.048686487072487475 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5935561535201748 | 0.044228498342167896 org.eclipse.swt.widgets.Control.java
+0.0 | 0.5453689793963994 | 0.040637858537985135 org.eclipse.swt.widgets.Shell.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 101354
+0.245091021399186 | 0.07206481704767871 | 0.8089134619172759 org.eclipse.swt.SWT.java
+0.0 | 1.616988274959811 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1682747976305374 | 0.14450009511164502 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0231901879308791 | 0.12655505346274817 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7670455481657849 | 0.09487335932412364 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7559289460184546 | 0.09349838310203488 org.eclipse.swt.widgets.Slider.java
+0.0 | 0.6918184537423839 | 0.08556876564359486 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6511944450127882 | 0.08054411464782862 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.6146377883042021 | 0.07602254114297502 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6082961711933811 | 0.07523816722894912 org.eclipse.swt.widgets.Shell.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 108769
+0.3712579737652313 | 0.1951737876337847 | 0.8368038586546763 org.eclipse.swt.SWT.java
+0.0 | 1.0606158960942866 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.021080566250004 | 0.19254483550739315 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9483598564132105 | 0.17883191453296932 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8023888807368799 | 0.15130621437820674 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6418635477302601 | 0.12103600372084178 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5598092289789227 | 0.1055630471012961 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.4904448228617865 | 0.0924830232448613 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.45079782054489576 | 0.08500680070984355 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.4448404835108014 | 0.08388342757239912 org.eclipse.swt.widgets.Combo.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 85072
+0.2318791353264855 | 0.15805104799725644 | 0.8379118074660129 org.eclipse.swt.SWT.java
+0.0 | 0.8337827107765616 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.7404688945588792 | 0.177616754338604 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6236808024812137 | 0.14960271889071317 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5948797444813948 | 0.1426941904149921 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.5648990998270196 | 0.1355027137228328 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.45566438812904714 | 0.10930051252913464 org.eclipse.swt.graphics.GC.java
+0.0 | 0.43733987043607897 | 0.10490499857660829 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4113085186475005 | 0.09866084132745315 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.3634329719983488 | 0.08717690287913445 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 102756
+0.3744736454428127 | 0.1557778022446283 | 0.8294744111212771 org.eclipse.swt.SWT.java
+0.0 | 1.057037588324709 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8908132054070097 | 0.1685490119265963 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.7706794438072457 | 0.14581873952631902 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.7632265760842769 | 0.1444085971046515 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6343592006864653 | 0.12002585484057507 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5528066287729887 | 0.10459545334601164 org.eclipse.swt.graphics.GC.java
+0.0 | 0.545762747998197 | 0.10326269453921169 org.eclipse.swt.widgets.Table.java
+0.0 | 0.4684386359150252 | 0.08863235160018296 org.eclipse.swt.internal.win32.OS.java
+0.0 | 0.46442018979448313 | 0.0878720293250005 org.eclipse.swt.widgets.CoolBar.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 81834
+0.35453792779583204 | 0.2365795582791514 | 0.8256671229774917 org.eclipse.swt.SWT.java
+0.0 | 1.8434443041132145 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.304791124428368 | 0.1415601351792438 org.eclipse.swt.widgets.Table.java
+0.0 | 1.135281257545671 | 0.12316957501916999 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0310404436652019 | 0.11186022179945188 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.832747603901455 | 0.09034692309861206 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7007039423534265 | 0.0760211676360354 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6663503095224141 | 0.07229405391154041 org.eclipse.swt.widgets.Link.java
+0.0 | 0.6270259026623072 | 0.06802764816525736 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6250728725780393 | 0.06781575892293959 org.eclipse.swt.custom.CTabFolder.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 106372
+0.28120605607857596 | 0.1989909005818135 | 0.8203805561797591 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.9527524060353285 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.51406726930608 | 0.15507007080125323 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0871459933093746 | 0.11134499078832079 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9403448212808323 | 0.09630968251525687 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.8737470224710575 | 0.08948876670391874 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8703734259033474 | 0.0891432445007676 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7047370127542757 | 0.07217883952683 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6682994776071136 | 0.06844692399728868 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6580321061778499 | 0.06739534455510947 org.eclipse.swt.custom.CTabFolder.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 115947
+0.43603235459454387 | 0.2852326838446488 | 0.8192084324373337 org.eclipse.swt.SWT.java
+0.0 | 2.969869454732482 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 2.1393407176768062 | 0.14406968052200209 org.eclipse.swt.widgets.Table.java
+0.0 | 1.7580009865206505 | 0.11838910856632295 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.749214156485846 | 0.11779737683072072 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2630810972557083 | 0.08505970491349313 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.0303300858899107 | 0.06938554718276128 org.eclipse.swt.widgets.Link.java
+0.0 | 1.0 | 0.0673430273782911 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.9348944793461815 | 0.06295862451842311 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7366878950056872 | 0.04961079308262364 org.eclipse.swt.widgets.Control.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 84911
+TOP  1  | 0.3521771169816051 | 0.1592236335435799 | 0.8484650566858252 org.eclipse.swt.SWT.java
+0.0 | 0.657065706435659 | 0.2 org.eclipse.swt.widgets.Table.java
+0.0 | 0.641500299099584 | 0.19526214587563498 org.eclipse.swt.custom.StyledText.java
+TOP  5  | 0.0 | 0.4908449155750251 | 0.1494051236481901 org.eclipse.swt.widgets.FileDialog.java
+0.0 | 0.41939962991572033 | 0.12765835313208168 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.4082482904638629 | 0.12426406871192852 org.eclipse.swt.dnd.URLTransfer.java
+0.0 | 0.3784707765436577 | 0.11520028296613537 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.37226555928876465 | 0.11331151683692918 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.3442651863295481 | 0.10478866358649602 org.eclipse.swt.graphics.ImageData.java
+0.0 | 0.336315556885867 | 0.10236892706218251 org.eclipse.swt.widgets.CoolBar.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 84906
+0.3399376351991962 | 0.19974923818622797 | 0.8559966329107445 org.eclipse.swt.SWT.java
+0.0 | 0.7134330326775802 | 0.2 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.6575705353492743 | 0.18433980632529764 org.eclipse.swt.graphics.GC.java
+0.0 | 0.6225483688431056 | 0.17452187951169684 org.eclipse.swt.widgets.FileDialog.java
+0.0 | 0.6123724356957946 | 0.1716692128474916 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5773502691896258 | 0.16185128603389076 org.eclipse.swt.internal.image.JPEGFileFormat.java
+0.0 | 0.4898979485566357 | 0.13733537027799328 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.4898979485566357 | 0.13733537027799328 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4374088826398533 | 0.12262086631963683 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.4082482904638631 | 0.11444614189832772 org.eclipse.swt.custom.CLabel.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 14654
+0.30480522141185273 | 0.05560384374855328 | 0.8067178673896966 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.655401648262206 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.4200828155053147 | 0.17156957853655366 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.1911239785649541 | 0.14390755014837184 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.7757107293198937 | 0.0937187334728358 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5956770157212188 | 0.07196767217750975 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4865336327998412 | 0.058781339659845146 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.4830583925655566 | 0.058361472947989115 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.47603698144059814 | 0.05751316992348393 org.eclipse.swt.widgets.Control.java
+0.0 | 0.45652492617451096 | 0.05515578973281293 org.eclipse.swt.dnd.DragSource.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 82500
+0.38240023461773054 | 0.18304172612897182 | 0.8245365936015906 org.eclipse.swt.SWT.java
+0.0 | 1.4919897121913972 | 0.2 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 1.0730576232990507 | 0.14384249630286935 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.9029240716696487 | 0.12103623292997866 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8760860535216065 | 0.11743861855921692 org.eclipse.swt.graphics.GC.java
+0.0 | 0.7349261138272121 | 0.09851624415663979 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5355696760445572 | 0.07179267680846484 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5336665286440003 | 0.0715375614567964 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.48311606279523633 | 0.06476131287603151 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.4734662332507988 | 0.06346776112221088 org.eclipse.swt.widgets.CoolBar.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92241
+0.29182697763315285 | 0.20251111971920716 | 0.8251043924871576 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.6133520842840896 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1996614644858532 | 0.14871663490839224 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0742314055698778 | 0.1331676347691407 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8390968753844811 | 0.10401906484743816 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8307569712446611 | 0.10298520444944315 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.8018156206026316 | 0.09939747540704112 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.7903531418223984 | 0.09797652347821034 org.eclipse.swt.graphics.GC.java
+0.0 | 0.7373765248551631 | 0.09140925059546036 org.eclipse.swt.widgets.Table.java
+0.0 | 0.6207366141065696 | 0.07694992558081529 org.eclipse.swt.dnd.DragSource.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 108591
+TOP  1  | 0.4418868309668706 | 0.2235781649645957 | 0.8228434434663031 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.9574821571397578 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.2429956110338272 | 0.12699943205102546 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.2035401520467288 | 0.12296818621379649 org.eclipse.swt.widgets.Spinner.java
+TOP  5  | 0.0 | 1.097708683011982 | 0.11215516616671867 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.896443726459459 | 0.09159150934681608 org.eclipse.swt.widgets.Table.java
+TOP  10  | 0.0 | 0.7539580749531479 | 0.07703345567704378 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.7335768721319681 | 0.07495106603718514 org.eclipse.swt.custom.CLabel.java
+TOP  10  | 0.0 | 0.6748922342611673 | 0.06895513522813503 org.eclipse.swt.widgets.Control.java
+0.0 | 0.6013767218087437 | 0.061443903293347604 org.eclipse.swt.widgets.Link.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 108813
+0.3266024524312988 | 0.24159837059555833 | 0.8274463933196652 org.eclipse.swt.SWT.java
+0.0 | 1.7605108822983653 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.0401822828566962 | 0.11816823097381 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0272987510035194 | 0.1167046181120301 org.eclipse.swt.widgets.Table.java
+0.0 | 0.96342550212315 | 0.10944840066712772 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.724944920681847 | 0.08235619875696809 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.711416262051803 | 0.08081929730795434 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.650122369948894 | 0.0738561035306016 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.6036974861448394 | 0.0685820794651046 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5400183115210008 | 0.06134790951317509 org.eclipse.swt.dnd.DragSource.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 78856
+0.33329585203993345 | 0.21157899072351768 | 0.8690502795833254 org.eclipse.swt.SWT.java
+0.0 | 0.6128258770283412 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.5 | 0.16317848796612633 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.49305555555555547 | 0.16091212007770792 org.eclipse.swt.widgets.Table.java
+0.0 | 0.4507756424723832 | 0.1471137755012053 org.eclipse.swt.graphics.GC.java
+0.0 | 0.37752186134366394 | 0.12320689301643338 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.3697940671887832 | 0.12068487348541956 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.35300566479164913 | 0.1152058612483571 org.eclipse.swt.graphics.Image.java
+0.0 | 0.3333333333333333 | 0.10878565864408424 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.3043886186211806 | 0.0993393490814043 org.eclipse.swt.widgets.Shell.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 100095
+0.3090735756357636 | 0.19588967956169884 | 0.8426684718745687 org.eclipse.swt.SWT.java
+0.0 | 0.9181940245601034 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8495571101650359 | 0.18504958373521313 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.7548243788859426 | 0.16441500569502632 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6893800074158866 | 0.15015998557519714 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5666010815896714 | 0.12341641666882415 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5610033982858931 | 0.12219713552474132 org.eclipse.swt.widgets.Table.java
+0.0 | 0.523868265515922 | 0.11410840225559114 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.40831113444725065 | 0.08893787664167561 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.4073077330606788 | 0.08871931686896252 org.eclipse.swt.widgets.Control.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 111259
+0.4178359869098161 | 0.14147911460452756 | 0.8175349424823125 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.613682106425357 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0595853233246058 | 0.13132516238552197 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.8991054602515077 | 0.11143526431525155 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.7962434310187911 | 0.0986865291309001 org.eclipse.swt.dnd.DropTarget.java
+0.0 | 0.7276068751089989 | 0.09017970419475001 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.6787977423113896 | 0.08413029302469845 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5366532720951565 | 0.0665128862690255 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.48507125007266594 | 0.060119802796500005 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.48507125007266594 | 0.060119802796500005 org.eclipse.swt.widgets.Link.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 91317
+0.3532825389829416 | 0.1897366596101028 | 0.819851925743384 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.9115189333542322 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.8658541348048187 | 0.0905933098225152 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.6967937560051523 | 0.07290471926244073 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.6478613500771649 | 0.0677849786128283 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.632455532033676 | 0.06617308581127958 org.eclipse.swt.widgets.CoolBar.java
+0.0 | 0.6296175155215259 | 0.06587614744853261 org.eclipse.swt.widgets.Table.java
+0.0 | 0.5006939628599936 | 0.05238702626726301 org.eclipse.swt.widgets.Combo.java
+0.0 | 0.48712993609734406 | 0.05096783794263071 org.eclipse.swt.widgets.Composite.java
+0.0 | 0.474341649025257 | 0.04962981435845968 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 87460
+0.3445558059935764 | 0.2689066929945638 | 0.8259677852505506 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 2.0710791498005237 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.9105351108019981 | 0.18449658102019054 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.8061434797789806 | 0.1744156885508639 org.eclipse.swt.widgets.Table.java
+0.0 | 1.4363130698885247 | 0.1387019004104081 org.eclipse.swt.widgets.Shell.java
+0.0 | 1.3014353879544256 | 0.12567703055479781 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.9753859079536571 | 0.0941910798578221 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.8970115772888491 | 0.08662262640954548 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.8579715846385932 | 0.0828526118590136 org.eclipse.swt.graphics.GC.java
+0.0 | 0.8523326362249436 | 0.08230806981056578 org.eclipse.swt.widgets.Control.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 92757
+0.44072804402671206 | 0.3177260070422996 | 0.8164807778115837 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 3.8557161643060756 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 2.3622722593510903 | 0.12253351432969058 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.1884086751967313 | 0.06164399165054271 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 1.1550823329804256 | 0.0599153196842387 org.eclipse.swt.widgets.Table.java
+0.0 | 1.0062305898749053 | 0.05219422524873532 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.894427190999916 | 0.04639486688776474 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.894427190999916 | 0.04639486688776474 org.eclipse.swt.widgets.Link.java
+0.0 | 0.8021789432701274 | 0.04160985451658618 org.eclipse.swt.graphics.GC.java
+0.0 | 0.753967101010568 | 0.039109056210638454 org.eclipse.swt.widgets.Control.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 83408
+TOP  1  | 0.4052574505494266 | 0.19149200450923998 | 0.8204414518238197 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.8735655975873728 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.4220590484276858 | 0.15180242957694134 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8656985035271669 | 0.09241187014129038 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.8058029476254184 | 0.08601811953241101 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7754187207880443 | 0.08277465403790145 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.7649081415506755 | 0.0816526672496189 org.eclipse.swt.widgets.Link.java
+0.0 | 0.7389198929171366 | 0.07887846509016372 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6171025793916405 | 0.06587467022091946 org.eclipse.swt.internal.win32.OS.java
+TOP  10  | 0.0 | 0.5959760607789693 | 0.06361944962550757 org.eclipse.swt.graphics.TextLayout.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 108236
+0.3645143011470544 | 0.13448296162629964 | 0.8151893182866699 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.770757042392387 | 0.2 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.4936737808261031 | 0.16870454218926279 org.eclipse.swt.widgets.Table.java
+0.0 | 1.3455222428162938 | 0.15197141229475747 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.06984500674478 | 0.12083475949917584 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.0017318615927233 | 0.11314164931845537 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.8146475461171987 | 0.09201121628934103 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6395506761647971 | 0.07223471779061572 org.eclipse.swt.dnd.DragSource.java
+0.0 | 0.5560816938337849 | 0.06280722657270801 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5332105759269051 | 0.06022402431973494 org.eclipse.swt.widgets.Link.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 104545
+0.35067011948860655 | 0.21888525926010383 | 0.8261074082371013 org.eclipse.swt.SWT.java
+0.0 | 1.6768057347726035 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.1801941623909196 | 0.14076695205851847 org.eclipse.swt.widgets.Spinner.java
+0.0 | 1.0716369660277878 | 0.12781885746271204 org.eclipse.swt.widgets.Table.java
+0.0 | 0.8987866933573374 | 0.10720224468688672 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.8656611356374287 | 0.10325121362431691 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.8363318699110434 | 0.09975298301618235 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.6623083377745642 | 0.07899643042005482 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.6239901737312346 | 0.07442605434741738 org.eclipse.swt.graphics.GC.java
+0.0 | 0.4928053803045815 | 0.058779066660505225 org.eclipse.swt.widgets.Slider.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 95410
+0.2762570693113145 | 0.1942809041582063 | 0.8559304782662432 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 0.6947228422878139 | 0.2 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5999999999999999 | 0.1727307534682812 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.23295595321451357 | 0.06706442887277433 org.eclipse.swt.widgets.Composite.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.internal.image.JPEGFileFormat.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.widgets.ImageList.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.widgets.Table.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.19999999999999996 | 0.0575769178227604 org.eclipse.swt.widgets.TabFolder.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 103863
+TOP  1  | 0.32817969542914194 | 0.09525793444156799 | 0.8180030348526229 org.eclipse.swt.SWT.java
+0.0 | 1.058243070919677 | 0.2 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.053038514007027 | 0.1990163777952967 org.eclipse.swt.widgets.Table.java
+0.0 | 1.0005431471819886 | 0.1890951473582447 org.eclipse.swt.custom.StyledText.java
+0.0 | 0.8825751904775363 | 0.16680008869994778 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.5476021671934328 | 0.10349270073037822 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5135672541271088 | 0.09706035753785525 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.5091584758972214 | 0.09622713153316129 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.47800931642160427 | 0.09034017411636541 org.eclipse.swt.custom.CTabFolder.java
+0.0 | 0.44776352591548296 | 0.08462394665648025 org.eclipse.swt.graphics.GC.java
+
+SUCCESSFULLY LOCATED BUG! 
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 119192
+0.378468478885969 | 0.33405521471359395 | 0.8323270324364074 org.eclipse.swt.SWT.java
+0.0 | 2.0667236646032148 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.9772119665507677 | 0.19133781650778822 org.eclipse.swt.widgets.Tree.java
+0.0 | 1.579809331165197 | 0.1528805575919605 org.eclipse.swt.widgets.Table.java
+0.0 | 0.9704390983792308 | 0.09391087110482602 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.8769116896068592 | 0.08486008116379849 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6728431041785259 | 0.06511205302405083 org.eclipse.swt.custom.SashForm.java
+0.0 | 0.6600959571617178 | 0.06387849217262899 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.6222124461103283 | 0.0602124470500787 org.eclipse.swt.graphics.GC.java
+0.0 | 0.5916207156557209 | 0.05725203865310216 org.eclipse.swt.graphics.TextLayout.java
+
+
+ +++++++++++++++++++++++++++++++++++++ 
+
+ +++++++++++++++++++++++++++++++++++++ 
+Bug ID: 108792
+0.2552875276746556 | 0.1883611049939713 | 0.821383866155768 org.eclipse.swt.SWT.java
+TOP  5  | 0.0 | 1.7617123453904928 | 0.2 org.eclipse.swt.custom.StyledText.java
+0.0 | 1.0696392950503917 | 0.12143177606140923 org.eclipse.swt.widgets.Tree.java
+0.0 | 0.9547571228866383 | 0.10838967273911126 org.eclipse.swt.widgets.Table.java
+0.0 | 0.7027494842451598 | 0.07978027583037589 org.eclipse.swt.widgets.Spinner.java
+0.0 | 0.6360338515614216 | 0.07220632281150773 org.eclipse.swt.graphics.TextLayout.java
+0.0 | 0.5883484054145522 | 0.06679278906729143 org.eclipse.swt.custom.CLabel.java
+0.0 | 0.5513714020703975 | 0.06259494105414617 org.eclipse.swt.widgets.Control.java
+0.0 | 0.5409852735761859 | 0.06141584634877195 org.eclipse.swt.widgets.Shell.java
+0.0 | 0.45923354093029295 | 0.05213490637468417 org.eclipse.swt.widgets.Link.java
+
+SUCCESSFULLY LOCATED BUG! 
  +++++++++++++++++++++++++++++++++++++ 

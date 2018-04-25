@@ -5,8 +5,9 @@ class StopWord:
                           "enum", "instanceof", "return", "transient", "catch", "extends", "int", "short", "try",
                           "char", "final", "interface", "static", "void", "class", "finally", "long", "strictfp",
                           "volatile", "const", "float", "native", "super", "while", "org", "eclipse", "swt",
-                          "string", "main", "args", "null", "this", "extends", "true", "false", "*", "(", ")", "[", "]",
-                          "{", "}", ";", "|", "&", "/", "\\", "<", ">", "@", "#", "$", "%", "?"]
+                          "string", "main", "args", "null", "this", "extends", "true", "false"
+                     #,"*", "(", ")", "[", "]" ,"{", "}", ";", "|", "&", "/", "\\", "<", ">", "@", "#", "$", "%", "?"
+                     ]
 
     english_words = ["a", "a\'s", "able", "about", "above", "according", "accordingly", "across",
                           "actually", "after", "afterwards", "again", "against", "ain\'t", "all", "allow", "allows",

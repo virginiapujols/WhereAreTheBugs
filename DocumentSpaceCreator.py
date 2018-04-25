@@ -11,7 +11,7 @@ from SourceCodeFile import SourceCodeFile
 from BugReport import BugReport
 
 
-SOURCE_CODE_PATH = "test_source_code"
+SOURCE_CODE_PATH = "G:\Team Drives\Team Evolution\swt_src"
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
@@ -26,13 +26,10 @@ class DocumentSpaceCreator:
     # @return stemmed text
     def create_corpus(self, content):
         # separate composed words (ClassName|class_name...)
-        content = first_cap_re.sub(r'\1_\2', content)
-        content = all_cap_re.sub(r'\1_\2', content)
-        content = content.replace("_", " ").lower()
-
+        content = self.preprocess_content(content)
         words = word_tokenize(content)
-        # print("Tokenizing ", len(words), " words")
         stemmed_words = set()
+
         for w in words:
             # jump english stop words and java frequently used keywords
             if (w in StopWord.english_words) or (w in StopWord.java_keywords):
@@ -44,6 +41,13 @@ class DocumentSpaceCreator:
 
         # return stemmed_words
         return ' '.join(stemmed_words)
+
+    def preprocess_content(self, content):
+        content = first_cap_re.sub(r'\1_\2', content)
+        content = all_cap_re.sub(r'\1_\2', content)
+        content = content.replace("_", " ")
+        content = content.lower()
+        return content
 
     # Reads a list of bug reports from XML.
     # @return List of BugReport objects with report info.

@@ -124,25 +124,25 @@ def main():
 
     # FORM 1
     # Compute for each bug report
-    # for i in range(len(bug_report_list)):
-    #     current_bug_report = bug_report_list[i]
-    #     dataset = {}
-    #
-    #     first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
-    #
-    #     files_pos_ranked.append(first_file_pos_ranked)
-    #     binary_relevance_list.append(files_binary_relevance)
-    #     top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
+    for i in range(len(bug_report_list)):
+        current_bug_report = bug_report_list[i]
+        dataset = {}
+
+        first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
+
+        files_pos_ranked.append(first_file_pos_ranked)
+        binary_relevance_list.append(files_binary_relevance)
+        top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     # END FORM 1
 
     # FORM 2
     # Compute for ONE bug report
-    current_bug_report = bug_report_list[0]
-    first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
-
-    files_pos_ranked.append(first_file_pos_ranked)
-    binary_relevance_list.append(files_binary_relevance)
-    top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
+    # current_bug_report = bug_report_list[0]
+    # first_file_pos_ranked, files_binary_relevance, top_n_rank = localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset)
+    #
+    # files_pos_ranked.append(first_file_pos_ranked)
+    # binary_relevance_list.append(files_binary_relevance)
+    # top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     # END FORM 2
 
     print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
