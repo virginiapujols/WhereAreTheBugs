@@ -11,7 +11,7 @@ from SourceCodeFile import SourceCodeFile
 from BugReport import BugReport
 
 
-SOURCE_CODE_PATH = "G:\Team Drives\Team Evolution\swt_src"
+SOURCE_CODE_PATH = "D:\RIT\Evolution\Final Project\swt_src"
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
@@ -43,9 +43,9 @@ class DocumentSpaceCreator:
         return ' '.join(stemmed_words)
 
     def preprocess_content(self, content):
-        content = first_cap_re.sub(r'\1_\2', content)
-        content = all_cap_re.sub(r'\1_\2', content)
-        content = content.replace("_", " ")
+        content = first_cap_re.sub(r'\1___\2', content)
+        content = all_cap_re.sub(r'\1___\2', content)
+        content = content.replace("___", " ")
         content = content.lower()
         return content
 
@@ -65,7 +65,6 @@ class DocumentSpaceCreator:
             bug_info = bug_element.findall('buginformation')
             for info in bug_info:
                 for node in info.getiterator():
-                    # print(node.tag, node.attrib, node.text)
                     if node.text and node.tag == 'summary':
                         bug_sum = node.text
                     if node.text and node.tag == 'description':
@@ -74,12 +73,7 @@ class DocumentSpaceCreator:
             for node_files in bug_element.findall('fixedFiles'):
                 for node_file in node_files.getiterator():
                     if node_file.tag == 'file':
-                        # print(node_file.tag, node_file.attrib, node_file.text)
                         bug_files.append(node_file.text)
-
-            # print("bug_id = ", bug_id, "bug_sum = ", bug_sum,
-            #       "\nFiles ", bug_files,
-            #       "\n----------\n")
 
             # Extract stemmed words from bug report
             content = ' '.join([bug_sum, bug_desc])
