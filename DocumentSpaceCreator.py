@@ -11,14 +11,14 @@ from SourceCodeFile import SourceCodeFile
 from BugReport import BugReport
 
 
-SOURCE_CODE_PATH = "D:\RIT\Evolution\Final Project\swt_src"
+# SOURCE_CODE_PATH = "D:\RIT\Evolution\Final Project\swt_src"
+SOURCE_CODE_PATH = "/Users/virginia/Documents/RIT/SEMESTER 2/SWEN 749 Evolution/Final Project/swt-3.1"
 first_cap_re = re.compile('(.)([A-Z][a-z]+)')
 all_cap_re = re.compile('([a-z0-9])([A-Z])')
 porter_stemmer = PorterStemmer()
 
+
 class DocumentSpaceCreator:
-
-
 
     # Clean up the content of an input text.
     # Separates composed words, removes stop words and takes its root element
@@ -46,7 +46,7 @@ class DocumentSpaceCreator:
         content = first_cap_re.sub(r'\1___\2', content)
         content = all_cap_re.sub(r'\1___\2', content)
         content = content.replace("___", " ")
-        content = content.lower()
+        # content = content.lower()
         return content
 
     # Reads a list of bug reports from XML.
@@ -127,4 +127,5 @@ class DocumentSpaceCreator:
                 max_file_word_count = source_code_file.word_count
             if source_code_file.word_count < min_file_word_count:
                 min_file_word_count = source_code_file.word_count
+
         return source_code_corpus, max_file_word_count,min_file_word_count

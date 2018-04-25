@@ -6,7 +6,7 @@ from StopWord import StopWord
 
 
 class VSMSimilarityCalculator:
-    def __init__(self,attr_analyzer__min_n=1, stop_words = StopWord.java_keywords + StopWord.english_words):
+    def __init__(self,attr_analyzer__min_n=1, stop_words=StopWord.java_keywords + StopWord.english_words):
         self.count_vectorizer = CountVectorizer(min_df=attr_analyzer__min_n, stop_words=stop_words)
 
     def VSMSimilarityCalculator_old(self, query_, document):
@@ -27,6 +27,7 @@ class VSMSimilarityCalculator:
         # Calculating similarity
         similarity = self.calculate_similarity(weight_matrix_query, weight_matrix_documents)
         similarity_score = similarity[0]
+
         print("================frequency_term_matrix_query===================")
         print(frequency_term_matrix_query.todense())
 
@@ -36,14 +37,16 @@ class VSMSimilarityCalculator:
         #self.print_VSMSimilarityCalculator(frequency_term_matrix_query,self.count_vectorizer.stop_words,self.count_vectorizer.vocabulary_,frequency_term_matrix_documents)
         return similarity_score
 
-    def VSMSimilarityCalculator(self, query_, document):
+    def VSMSimilarityCalculator(self, query, document):
         # Attributes
-        documents = [query_] + document
-        tfidf_vectorizer = TfidfVectorizer()
-        tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
-        similarity_score = cosine_similarity(tfidf_matrix[0:1],tfidf_matrix[1:])
+        stop_words = StopWord.java_keywords + StopWord.english_words
+        documents = [query] + document
 
-        return similarity_score
+        tfidf_vectorizer = TfidfVectorizer(stop_words=stop_words, sublinear_tf=True)
+        tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
+
+        similarity_scores = cosine_similarity(tfidf_matrix[0:1],tfidf_matrix[1:])
+        return list(similarity_scores[0])
 
     def calculate_weight(self,frequency_term_matrix_documents):
         return self.calculate_tf_idf(frequency_term_matrix_documents, norm='l2')

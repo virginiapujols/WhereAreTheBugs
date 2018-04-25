@@ -3,20 +3,22 @@ from DataSetFieldEnum import DataSetFieldEnum
 
 
 class BugSimilarityScoreCalculator:
+
     def calculate_bug_similarity(self, actual_bug_report, bug_report_list):
         semi_score_dictionary = {}
-        score = 0.0
-        cosine_similarity_calculator = VSMSimilarityCalculator()
+        calc = VSMSimilarityCalculator()
         for bug_report in bug_report_list:
             if actual_bug_report != bug_report:
-                score = cosine_similarity_calculator.VSMSimilarityCalculator(actual_bug_report.content_corpus, [bug_report.content_corpus])[0] / len(bug_report.fixed_files)
+                similarity_between_reports = calc.VSMSimilarityCalculator(actual_bug_report.content_corpus, [bug_report.content_corpus])[0]
+                files_count = len(bug_report.fixed_files)
+                simi_score = similarity_between_reports / files_count
 
-                if score != 0:
+                if simi_score != 0:
                     for fixed_file in bug_report.fixed_files:
                         if fixed_file not in semi_score_dictionary:
-                            semi_score_dictionary[fixed_file] = score
+                            semi_score_dictionary[fixed_file] = simi_score
                         else:
-                            semi_score_dictionary[fixed_file] += score
+                            semi_score_dictionary[fixed_file] += simi_score
 
         #for key, value in semi_score.items():
         #    print(key, value)
@@ -25,8 +27,8 @@ class BugSimilarityScoreCalculator:
 
 
     def get_similar_bug_report_cosine_similarity(self, dataset, current_bug_report, bug_report_list):
-        semi_score_min = 0
-        semi_score_max = 0.0
+        semi_score_min = 1
+        semi_score_max = -1
 
         semi_score_dictionary = self.calculate_bug_similarity(current_bug_report, bug_report_list)
         for file, score in semi_score_dictionary.items():

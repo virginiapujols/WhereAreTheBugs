@@ -88,13 +88,10 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
                                                             max_file_word_count, min_file_word_count)
 
     # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
-    bug_similarity_score_calculator = BugSimilarityScoreCalculator()
-    semi_score_max, semi_score_min = bug_similarity_score_calculator.get_similar_bug_report_cosine_similarity(dataset, current_bug_report,
-                                                                              bug_report_list)
+    semi_score_max, semi_score_min = BugSimilarityScoreCalculator().get_similar_bug_report_cosine_similarity(dataset, current_bug_report, bug_report_list)
 
     # 3: Combine 1 and 2
-    rank_combinator = RankCombinator()
-    rank_combinator.combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
+    RankCombinator().combine_ranks(0.2, dataset, rVSMz_min, rVSMz_max, semi_score_min, semi_score_max)
 
     # print results in file
     first_file_pos_ranked, files_binary_relevance, top_n_rank = save_ranks_to_file(current_bug_report, dataset)
@@ -124,7 +121,6 @@ def computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_r
         binary_relevance_list.append(files_binary_relevance)
         top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     return top_n_rank_list
-
 
 
 def main():
@@ -158,7 +154,7 @@ def main():
     ranks_file.close()
     e = int(time.time() - start_time)
     # Elapase Time
-    print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
+    print('\nElapsed Time: {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
 
 if __name__ == "__main__":
     main()
