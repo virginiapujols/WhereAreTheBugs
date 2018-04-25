@@ -75,17 +75,18 @@ def save_ranks_to_file(bug_report, dataset):
 
 
 def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset):
-    source_code_corpus = []
+
+    # Creating source code corpus
+    source_code_corpus, max_file_word_count, min_file_word_count = DocumentSpaceCreator.get_source_code_corpus_max_min(source_code_list)
 
     # 0: Cosine Similarity (VSM)
-    query = current_bug_report.content_corpus
-    documents = source_code_corpus
+    bug_report_corpus = current_bug_report.content_corpus
     cosine_similarity_calculator = VSMSimilarityCalculator()
-    cosine_similarity = cosine_similarity_calculator.VSMSimilarityCalculator(query, documents)
+    cosine_similarity = cosine_similarity_calculator.VSMSimilarityCalculator(bug_report_corpus, source_code_corpus)
 
     # 1: Cosine Similarity for a bug report with source code file size (rVSM)
     rvsm_calculator = RVSMCalculator()
-    max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_corpus,source_code_list)
+    #max_file_word_count, min_file_word_count = rvsm_calculator.get_max_min_file_size(source_code_list)
     rVSMz_max, rVSMz_min = rvsm_calculator.get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
                                                             max_file_word_count, min_file_word_count)
 

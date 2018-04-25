@@ -115,3 +115,16 @@ class DocumentSpaceCreator:
             #     print("Error: Something wrong occurred opening ", file)
 
         return data
+
+    @staticmethod
+    def get_source_code_corpus_max_min(source_code_list):
+        source_code_corpus = []
+        max_file_word_count = -1
+        min_file_word_count = 1000000
+        for source_code_file in source_code_list:
+            source_code_corpus.append(source_code_file.content_corpus)
+            if source_code_file.word_count > max_file_word_count:
+                max_file_word_count = source_code_file.word_count
+            if source_code_file.word_count < min_file_word_count:
+                min_file_word_count = source_code_file.word_count
+        return source_code_corpus, max_file_word_count,min_file_word_count

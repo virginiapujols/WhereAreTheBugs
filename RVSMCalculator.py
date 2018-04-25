@@ -3,17 +3,16 @@ from FileSizeScoreCalculator import FileSizeScoreCalculator
 
 
 class RVSMCalculator:
-    def get_max_min_file_size(self, source_code_corpus, source_code_list):
-        max_file_word_count = -1
-        min_file_word_count = 1000000
-        for current_file in source_code_list:
-            source_code_corpus.append(current_file.content_corpus)
-            if current_file.word_count > max_file_word_count:
-                max_file_word_count = current_file.word_count
-            if current_file.word_count < min_file_word_count:
-                min_file_word_count = current_file.word_count
-
-        return max_file_word_count, min_file_word_count
+    # def get_max_min_file_size(self, source_code_list):
+    #     max_file_word_count = -1
+    #     min_file_word_count = 1000000
+    #     for current_file in source_code_list:
+    #         if current_file.word_count > max_file_word_count:
+    #             max_file_word_count = current_file.word_count
+    #         if current_file.word_count < min_file_word_count:
+    #             min_file_word_count = current_file.word_count
+    #
+    #     return max_file_word_count, min_file_word_count
 
 
     def get_bug_report_cosine_similarity(self, dataset, source_code_list, cos_simi, max_word_count, min_word_count):
