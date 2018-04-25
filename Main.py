@@ -3,9 +3,9 @@ import time
 import re
 
 from BugSimilarityScoreCalculator import BugSimilarityScoreCalculator
-from CosineSimilarityCalculator import CosineSimilarityCalculator
+from VSMSimilarityCalculator import VSMSimilarityCalculator
 from DataSetFieldEnum import DataSetFieldEnum
-import Metrics
+from Metrics import Metrics
 
 from DocumentSpaceCreator import DocumentSpaceCreator
 from RankCombinator import RankCombinator
@@ -77,7 +77,7 @@ def save_ranks_to_file(bug_report, dataset):
 def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset):
     bug_report_corpus = current_bug_report.content_corpus
     source_code_corpus = []
-    cosine_similarity_calculator = CosineSimilarityCalculator()
+    cosine_similarity_calculator = VSMSimilarityCalculator()
     bug_similarity_score_calculator = BugSimilarityScoreCalculator()
     rvsm_calculator =  RVSMCalculator()
     rank_combinator = RankCombinator()
@@ -88,7 +88,7 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     documents = source_code_corpus
 
     # 0: Cosine Similarity (VSM)
-    cosine_similarity = cosine_similarity_calculator.compute_cosine_similarity(query, documents)
+    cosine_similarity = cosine_similarity_calculator.VSMSimilarityCalculator(query, documents)
 
     # 1: Cosine Similarity for a bug report with source code file size (rVSM)
     rVSMz_max, rVSMz_min = rvsm_calculator.get_bug_report_cosine_similarity(dataset, source_code_list, cosine_similarity,
@@ -145,14 +145,11 @@ def main():
     top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     # END FORM 2
 
-    # METRICS....
-    mean_reciprocal_rank = Metrics.mean_reciprocal_rank(files_pos_ranked, len(bug_report_list))
-    mean_average_precision = Metrics.mean_average_precision(binary_relevance_list)
-
-    print("---- METRICS ---- ")
     print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
-    print("MRR (Mean Reciprocal Rank)   = ", mean_reciprocal_rank)
-    print("MAP (Mean Average Precision) = ", mean_average_precision)
+    # METRICS....
+    metric = Metrics()
+    metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list)
+
 
     ranks_file.close()
     e = int(time.time() - start_time)

@@ -1,4 +1,4 @@
-from CosineSimilarityCalculator import CosineSimilarityCalculator
+from VSMSimilarityCalculator import VSMSimilarityCalculator
 from DataSetFieldEnum import DataSetFieldEnum
 
 
@@ -6,10 +6,10 @@ class BugSimilarityScoreCalculator:
     def calculate_bug_similarity(self, actual_bug_report, bug_report_list):
         semi_score_dictionary = {}
         score = 0.0
-        cosine_cimilarity_calculator = CosineSimilarityCalculator()
+        cosine_similarity_calculator = VSMSimilarityCalculator()
         for bug_report in bug_report_list:
             if actual_bug_report != bug_report:
-                score = cosine_cimilarity_calculator.compute_cosine_similarity(actual_bug_report.content_corpus, [bug_report.content_corpus])[0] / len(bug_report.fixed_files)
+                score = cosine_similarity_calculator.VSMSimilarityCalculator(actual_bug_report.content_corpus, [bug_report.content_corpus])[0] / len(bug_report.fixed_files)
 
                 if score != 0:
                     for fixed_file in bug_report.fixed_files:
