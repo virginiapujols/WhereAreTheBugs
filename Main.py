@@ -106,43 +106,6 @@ def localize_bugs(current_bug_report, source_code_list, bug_report_list, dataset
     return first_file_pos_ranked, files_binary_relevance, top_n_rank
 
 
-def main():
-
-    start_time = time.time()
-    dsc = DocumentSpaceCreator()
-    source_code_list = dsc.parse_source_code()
-    bug_report_list = dsc.parse_bug_reports()
-    print("JAVA FILES  = ", len(source_code_list))
-    print("BUG REPORTS = ", len(bug_report_list))
-
-    # metrics
-    files_pos_ranked = []
-    binary_relevance_list = []
-    top_n_rank_list = [0, 0, 0]
-
-    # FORM 1
-    # Compute for each bug report
-    top_n_rank_list = computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_ranked,
-                                               source_code_list, top_n_rank_list)
-    # END FORM 1
-
-    # FORM 2
-    # Compute for ONE bug report
-    # top_n_rank_list = compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list,
-    #                                          top_n_rank_list)
-    # END FORM 2
-
-    print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
-    # METRICS....
-    metric = Metrics()
-    metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list)
-
-
-    ranks_file.close()
-    e = int(time.time() - start_time)
-    print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
-
-
 def compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list, top_n_rank_list):
     dataset = {}
     current_bug_report = bug_report_list[0]
@@ -167,6 +130,39 @@ def computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_r
         top_n_rank_list = [top_n_rank_list[i] + top_n_rank[i] for i in range(len(top_n_rank))]
     return top_n_rank_list
 
+
+
+def main():
+
+    start_time = time.time()
+    dsc = DocumentSpaceCreator()
+    source_code_list = dsc.parse_source_code()
+    bug_report_list = dsc.parse_bug_reports()
+    print("JAVA FILES  = ", len(source_code_list))
+    print("BUG REPORTS = ", len(bug_report_list))
+
+    # metrics
+    files_pos_ranked = []
+    binary_relevance_list = []
+    top_n_rank_list = [0, 0, 0]
+
+    # FORM 1
+    # Compute for each bug report
+    top_n_rank_list = computer_all_bug_reports(binary_relevance_list, bug_report_list, files_pos_ranked,
+                                               source_code_list, top_n_rank_list)
+
+    # Compute for ONE bug report
+    # top_n_rank_list = compute_one_bug_report(binary_relevance_list, bug_report_list, files_pos_ranked, source_code_list,
+    #                                          top_n_rank_list)
+
+    print("TOPNRANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
+    # METRICS....
+    metric = Metrics()
+    metric.calculate(files_pos_ranked,len(bug_report_list),binary_relevance_list,top_n_rank_list)
+
+    ranks_file.close()
+    e = int(time.time() - start_time)
+    print('{:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
 
 if __name__ == "__main__":
     main()
