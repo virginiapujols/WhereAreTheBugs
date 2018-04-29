@@ -2,14 +2,16 @@ import numpy as np
 
 
 class Metrics:
+    def __init__(self,dataset):
+        self.dataset = dataset
 
-    def calculate(self,files_pos_ranked,bug_report_list_lenght,binary_relevance_list, top_n_rank_list):
-        mean_reciprocal_rank = self.mean_reciprocal_rank(files_pos_ranked, bug_report_list_lenght)
-        mean_average_precision = self.mean_average_precision(binary_relevance_list)
+    def calculate(self):
+        mean_reciprocal_rank = self.mean_reciprocal_rank(self.dataset.files_pos_ranked, self.dataset.get_bug_report_list_lenght())
+        mean_average_precision = self.mean_average_precision(self.dataset.binary_relevance_list)
 
         print("\n")
         print("---- METRICS ---- ")
-        print("TOP N RANK [TOP1, TOP5, TOP10] = ", top_n_rank_list)
+        print("TOP N RANK [TOP1, TOP5, TOP10] = ", self.dataset.top_n_rank_list)
         print("MRR (Mean Reciprocal Rank)     = ", mean_reciprocal_rank)
         print("MAP (Mean Average Precision)   = ", mean_average_precision)
 
@@ -17,10 +19,9 @@ class Metrics:
         sum_reciprocal_ranks = 0
         count = 0
         for i in rank_list:
-            if i > 0:
-                sum_reciprocal_ranks += 1 / i
+        #    if i > 0:
+            sum_reciprocal_ranks += 1 / (i if i > 0 else -i)
             count += 1
-
 
         # if sum_reciprocal_ranks < 0:
         #    sum_reciprocal_ranks *= -1

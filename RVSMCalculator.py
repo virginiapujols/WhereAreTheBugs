@@ -4,27 +4,29 @@ from FileSizeScoreCalculator import FileSizeScoreCalculator
 
 class RVSMCalculator:
 
-    def get_bug_report_cosine_similarity(self, dataset, source_code_list, cos_simi, max_word_count, min_word_count):
-        rVSMz_min = 1
-        rVSMz_max = -1
+    def __init__(self,dataset):
+        self.rVSMz_min = 0
+        self.rVSMz_max = 0
+        self.dataset = dataset
+
+    def get_bug_report_cosine_similarity(self,cos_simi):
         file_size_score_calculator = FileSizeScoreCalculator()
         for i in range(len(cos_simi)):
-            file = source_code_list[i].file_path
-            file_word_count = source_code_list[i].word_count
+            file = self.dataset.source_code_list[i].file_path
+            file_word_count = self.dataset.source_code_list[i].word_count
             cosine_score = cos_simi[i]
-            size_score = file_size_score_calculator.calculate_file_size_score(file_word_count, max_word_count, min_word_count)
+            size_score = file_size_score_calculator.calculate_file_size_score(file_word_count, self.dataset.max_file_word_count, self.dataset.min_file_word_count)
 
             rVSMScore = size_score * cosine_score
 
-            if file not in dataset:
-                dataset[file] = [rVSMScore, 0.0, 0.0]
+            if file not in self.dataset.results:
+                self.dataset.results[file] = [rVSMScore, 0.0, 0.0]
             else:
-                dataset[file][DataSetFieldEnum.rVSMScore] += rVSMScore  # WHY IS USING += instead of just equal
+                self.dataset.results[file][DataSetFieldEnum.rVSMScore] += rVSMScore  # WHY IS USING += instead of just equal
 
-            if dataset[file][DataSetFieldEnum.rVSMScore] > rVSMz_max:
-                rVSMz_max = dataset[file][DataSetFieldEnum.rVSMScore]
+            if self.dataset.results[file][DataSetFieldEnum.rVSMScore] > self.rVSMz_max:
+                self.rVSMz_max = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
 
-            if dataset[file][DataSetFieldEnum.rVSMScore] < rVSMz_min:
-                rVSMz_min = dataset[file][DataSetFieldEnum.rVSMScore]
+            if self.dataset.results[file][DataSetFieldEnum.rVSMScore] < self.rVSMz_min:
+                self.rVSMz_min = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
 
-        return rVSMz_max, rVSMz_min
