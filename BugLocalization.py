@@ -23,7 +23,7 @@ class BugLocalization:
         for i in range(self.dataset.get_bug_report_list_lenght()):
             current_bug_report = self.dataset.bug_report_list[i]
             self.dataset.results = {}
-            self.localize_bugs(self.dataset, current_bug_report)
+            self.localize_bugs(current_bug_report)
 
             first_file_pos_ranked, files_binary_relevance, top_n_rank = self.calculate_rank_first_file_and_tops(self.dataset,
                                                                                                            current_bug_report)
@@ -112,25 +112,25 @@ class BugLocalization:
         return rank_first_file, files_binary_relevance, [top1_count, top5_count, top10_count]
 
 
-    def localize_bugs(self,dataset, current_bug_report):
+    def localize_bugs(self, current_bug_report):
         # Creating source code corpus
         bug_report_corpus = current_bug_report.content_corpus
 
         # 0: Cosine Similarity (VSM)
-        cosine_similarity = VSMSimilarityCalculator().calculate(bug_report_corpus, dataset.source_code_corpus)
+        cosine_similarity = VSMSimilarityCalculator().calculate(bug_report_corpus, self.dataset.source_code_corpus)
 
         # 1: Cosine Similarity for a bug report with source code file size (rVSM)
-        rvsm_calculator = RVSMCalculator(dataset)
+        rvsm_calculator = RVSMCalculator(self.dataset)
         rvsm_calculator.get_bug_report_cosine_similarity(cosine_similarity)
 
         # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
-        bug_similarity_calculator = BugSimilarityScoreCalculator(dataset)
+        bug_similarity_calculator = BugSimilarityScoreCalculator(self.dataset)
         bug_similarity_calculator.get_similar_bug_report_cosine_similarity(current_bug_report)
 
         # 3: Combine 1 and 2
-        rank_combinator = FinalRank(dataset)
-        rank_combinator.combine_ranks(dataset, 0.2, rvsm_calculator,bug_similarity_calculator)
+        rank_combinator = FinalRank(self.dataset)
+        rank_combinator.combine_ranks( 0.2, rvsm_calculator,bug_similarity_calculator)
 
         # print results in file
 
-        self.save_ranks_to_file(dataset, current_bug_report)
+        self.save_ranks_to_file(self.dataset, current_bug_report)
