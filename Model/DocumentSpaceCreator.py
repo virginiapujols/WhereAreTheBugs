@@ -43,9 +43,9 @@ class DocumentSpaceCreator:
         return ' '.join(stemmed_words)
 
     def preprocess_content(self, content):
-        content = first_cap_re.sub(r'\1___\2', content)
-        content = all_cap_re.sub(r'\1___\2', content)
-        content = content.replace("___", " ")
+        # content = first_cap_re.sub(r'\1___\2', content)
+        # content = all_cap_re.sub(r'\1___\2', content)
+        # content = content.replace("___", " ")
         # content = content.lower()
         return content
 

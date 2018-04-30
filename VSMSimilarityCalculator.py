@@ -3,10 +3,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from StopWord import StopWord
 
 class VSMSimilarityCalculator:
-    def calculate(self, query, document):
+    def  calculate(self, query, document):
         stop_words = StopWord.java_keywords + StopWord.english_words
         documents = [query] + document
-        tfidf_vectorizer = TfidfVectorizer(stop_words=stop_words, sublinear_tf=True)
+        tfidf_vectorizer = TfidfVectorizer(sublinear_tf=True)
         tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
         similarity_scores = cosine_similarity(tfidf_matrix[0:1],tfidf_matrix[1:])
         return list(similarity_scores[0])

@@ -6,7 +6,7 @@ class Metrics:
         self.dataset = dataset
 
     def calculate(self):
-        mean_reciprocal_rank = self.mean_reciprocal_rank(self.dataset.files_pos_ranked, self.dataset.get_bug_report_list_lenght())
+        mean_reciprocal_rank = self.mean_reciprocal_rank()
         mean_average_precision = self.mean_average_precision(self.dataset.binary_relevance_list)
 
         print("\n")
@@ -15,16 +15,12 @@ class Metrics:
         print("MRR (Mean Reciprocal Rank)     = ", mean_reciprocal_rank)
         print("MAP (Mean Average Precision)   = ", mean_average_precision)
 
-    def mean_reciprocal_rank(self, rank_list, bug_report_size):
+    def mean_reciprocal_rank(self,):
+        rank_list = self.dataset.files_pos_ranked
+        bug_report_size = self.dataset.get_bug_report_list_lenght()
         sum_reciprocal_ranks = 0
-        count = 0
-        for i in rank_list:
-        #    if i > 0:
-            sum_reciprocal_ranks += 1 / (i if i > 0 else -i)
-            count += 1
-
-        # if sum_reciprocal_ranks < 0:
-        #    sum_reciprocal_ranks *= -1
+        for rank in rank_list:
+            sum_reciprocal_ranks += 1 / rank
 
         mean_rank = sum_reciprocal_ranks / bug_report_size
         return mean_rank

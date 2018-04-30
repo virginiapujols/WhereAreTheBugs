@@ -9,7 +9,7 @@ class RVSMCalculator:
         self.rVSMz_max = 0
         self.dataset = dataset
 
-    def get_bug_report_cosine_similarity(self,cos_simi):
+    def calculate(self, cos_simi):
         file_size_score_calculator = FileSizeScoreCalculator()
         for i in range(len(cos_simi)):
             file = self.dataset.source_code_list[i].file_path
@@ -18,9 +18,11 @@ class RVSMCalculator:
             size_score = file_size_score_calculator.calculate_file_size_score(file_word_count, self.dataset.max_file_word_count, self.dataset.min_file_word_count)
 
             rVSMScore = size_score * cosine_score
+            #rVSMScore = cosine_score
 
             if file not in self.dataset.results:
-                self.dataset.results[file] = [rVSMScore, 0.0, 0.0]
+                self.dataset.results[file] = [0.0, 0.0, 0.0]
+                self.dataset.results[file][DataSetFieldEnum.rVSMScore] += rVSMScore
             else:
                 self.dataset.results[file][DataSetFieldEnum.rVSMScore] += rVSMScore  # WHY IS USING += instead of just equal
 

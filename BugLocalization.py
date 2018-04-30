@@ -25,8 +25,9 @@ class BugLocalization:
             self.dataset.results = {}
             self.localize_bugs(current_bug_report)
 
-            first_file_pos_ranked, files_binary_relevance, top_n_rank = self.calculate_rank_first_file_and_tops(self.dataset,
-                                                                                                           current_bug_report)
+            first_file_pos_ranked = self.calculate_rank_first(self.dataset,current_bug_report)
+            files_binary_relevance = self.calculate_binary(current_bug_report,self.dataset)
+            top_n_rank = self.calculate_tops(current_bug_report,self.dataset)
 
             self.dataset.files_pos_ranked.append(first_file_pos_ranked)
             self.dataset.binary_relevance_list.append(files_binary_relevance)
@@ -34,6 +35,7 @@ class BugLocalization:
 
     def save_ranks_to_file(self,dataset, bug_report):
         ranks_file.write("\n +++++++++++++++++++++++++++++++++++++ \n")
+        ranks_file.write("rVSMScore|simi_score|final_rank|file name \n")
         ranks_file.write("Bug ID: ")
         ranks_file.write(bug_report.id)
         ranks_file.write("\n")
@@ -78,16 +80,37 @@ class BugLocalization:
         ranks_file.write("\n +++++++++++++++++++++++++++++++++++++ \n")
 
 
-    def calculate_rank_first_file_and_tops(self,dataset, bug_report):
-        rank_first_file = 0
+    def calculate_binary_tops(self, bug_report, dataset):
         top1_count = 0
         top5_count = 0
         top10_count = 0
         files_binary_relevance = []
+        sorted_results10 = sorted(dataset.results.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank],
+                                  reverse=True)[:10]
+        for count, dict_list in enumerate(sorted_results10, 1):
+            ranked = False
+
+            # Evaluate if bug  is in list
+            for file_name in bug_report.fixed_files:
+                if file_name == dict_list[0]:
+                    ranked = True
+            if ranked:
+                if count == 1:
+                    top1_count += 1
+                elif 1 < count <= 5:
+                    top5_count += 1
+                elif 5 < count <= 10:
+                    top10_count += 1
+            files_binary_relevance.append(1 if ranked else 0)
+        return files_binary_relevance, top10_count, top1_count, top5_count
+
+    def calculate_rank_first(self,dataset, bug_report):
+        rank_first_file = 0
         did_locate_bug = False
         count = 0
+        sorted_results = sorted(dataset.results.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank], reverse=True)
 
-        for key, value in sorted(dataset.results.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank], reverse=True):
+        for key, value in sorted_results:
             count += 1
             ranked = False
 
@@ -100,17 +123,46 @@ class BugLocalization:
                 did_locate_bug = True
                 rank_first_file = count
 
-            if count <= 10:
-                if count == 1:
-                    top1_count += 1 if ranked else 0
-                elif 1 < count <= 5:
-                    top5_count += 1 if ranked else 0
-                elif 5 < count <= 10:
-                    top10_count += 1 if ranked else 0
-                files_binary_relevance.append(1 if ranked else 0)
+        return rank_first_file
 
-        return rank_first_file, files_binary_relevance, [top1_count, top5_count, top10_count]
+    def calculate_tops(self, bug_report, dataset):
+        top1_count = 0
+        top5_count = 0
+        top10_count = 0
+        end = False
+        sorted_results10 = sorted(dataset.results.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank],
+                                  reverse=True)[:10]
+        for count, dict_list in enumerate(sorted_results10, 1):
+            for file_name in bug_report.fixed_files:
+                if not end:
+                    if file_name == dict_list[0]:
+                        if count == 1:
+                            top1_count += 1
+                            top5_count += 1
+                            top10_count += 1
+                            end = True
+                        if 1 < count <= 5:
+                            top5_count += 1
+                            top10_count += 1
+                            end = True
+                        if 5 < count <= 10:
+                            top10_count += 1
+                            end = True
+        return top1_count, top5_count, top10_count
 
+    def calculate_binary(self, bug_report, dataset):
+        files_binary_relevance = []
+        sorted_results10 = sorted(dataset.results.items(), key=lambda e: e[1][DataSetFieldEnum.final_rank],
+                                  reverse=True)[:10]
+        for count, dict_list in enumerate(sorted_results10, 1):
+            ranked = False
+
+            # Evaluate if bug  is in list
+            for file_name in bug_report.fixed_files:
+                if file_name == dict_list[0]:
+                    ranked = True
+            files_binary_relevance.append(1 if ranked else 0)
+        return files_binary_relevance
 
     def localize_bugs(self, current_bug_report):
         # Creating source code corpus
@@ -121,7 +173,7 @@ class BugLocalization:
 
         # 1: Cosine Similarity for a bug report with source code file size (rVSM)
         rvsm_calculator = RVSMCalculator(self.dataset)
-        rvsm_calculator.get_bug_report_cosine_similarity(cosine_similarity)
+        rvsm_calculator.calculate(cosine_similarity)
 
         # 2: Cosine Similarity for a bug report with the rest of bug reports (SIMI_SCORE)
         bug_similarity_calculator = BugSimilarityScoreCalculator(self.dataset)
@@ -129,8 +181,8 @@ class BugLocalization:
 
         # 3: Combine 1 and 2
         rank_combinator = FinalRank(self.dataset)
-        rank_combinator.combine_ranks( 0.2, rvsm_calculator,bug_similarity_calculator)
+        rank_combinator.combine_ranks(0.2, rvsm_calculator,bug_similarity_calculator)
 
         # print results in file
-
+        #print(self.dataset.results)
         self.save_ranks_to_file(self.dataset, current_bug_report)
