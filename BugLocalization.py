@@ -181,7 +181,7 @@ class BugLocalization:
 
         # 3: Combine 1 and 2
         rank_combinator = FinalRank(self.dataset)
-        rank_combinator.combine_ranks(0.2, rvsm_calculator,bug_similarity_calculator)
+        rank_combinator.combine_ranks(0.25, rvsm_calculator,bug_similarity_calculator)
 
         # print results in file
         #print(self.dataset.results)

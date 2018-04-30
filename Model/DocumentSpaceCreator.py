@@ -92,6 +92,8 @@ class DocumentSpaceCreator:
     '''
     def parse_source_code(self):
         java_files = []
+        min_file_lenght = 6000000
+        max_file_lenght = -1
         for root, dir_names, file_names in os.walk(SOURCE_CODE_PATH):
             for filename in fnmatch.filter(file_names, "*.java"):
                 java_files.append(os.path.join(root, filename))
@@ -108,13 +110,13 @@ class DocumentSpaceCreator:
                 # Extract stemmed words from source code
                 source_code_corpus = self.create_corpus(file_content)
                 word_count = len(re.findall(r'\w+', source_code_corpus))
-                data.append(SourceCodeFile(full_class_package, source_code_corpus, word_count))
-
-            # try:
-            # except:
-            #     print("Error: Something wrong occurred opening ", file)
-
-        return data
+                file_lenght = sum(1 for line in file_content)
+                if file_lenght <= min_file_lenght:
+                    min_file_lenght = file_lenght
+                if file_lenght >= max_file_lenght:
+                    max_file_lenght = file_lenght
+                data.append(SourceCodeFile(full_class_package, source_code_corpus, word_count,file_lenght))
+        return data, min_file_lenght, max_file_lenght
 
     @staticmethod
     def get_source_code_corpus_max_min(source_code_list):

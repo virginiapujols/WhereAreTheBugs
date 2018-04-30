@@ -1,5 +1,8 @@
+import math
+
 from DataSetFieldEnum import DataSetFieldEnum
-from FileSizeScoreCalculator import FileSizeScoreCalculator
+
+from Util import Util
 
 
 class RVSMCalculator:
@@ -10,25 +13,26 @@ class RVSMCalculator:
         self.dataset = dataset
 
     def calculate(self, cos_simi):
-        file_size_score_calculator = FileSizeScoreCalculator()
         for i in range(len(cos_simi)):
-            file = self.dataset.source_code_list[i].file_path
-            file_word_count = self.dataset.source_code_list[i].word_count
+            file_word_count = self.dataset.source_code_list[i].file_lenght
             cosine_score = cos_simi[i]
-            size_score = file_size_score_calculator.calculate_file_size_score(file_word_count, self.dataset.max_file_word_count, self.dataset.min_file_word_count)
+            size_score = self.calculate_file_size_score(file_word_count*8.4, self.dataset.max_file_lengh, self.dataset.min_file_lenght)
 
             rVSMScore = size_score * cosine_score
-            #rVSMScore = cosine_score
+            self.distribute_size_score(i, rVSMScore)
 
-            if file not in self.dataset.results:
-                self.dataset.results[file] = [0.0, 0.0, 0.0]
-                self.dataset.results[file][DataSetFieldEnum.rVSMScore] += rVSMScore
-            else:
-                self.dataset.results[file][DataSetFieldEnum.rVSMScore] += rVSMScore  # WHY IS USING += instead of just equal
+    def distribute_size_score(self, i, rVSMScore):
+        file = self.dataset.source_code_list[i].file_path
+        if file not in self.dataset.results:
+            self.dataset.results[file] = [0.0, 0.0, 0.0]
+            self.dataset.results[file][DataSetFieldEnum.rVSMScore] = rVSMScore
+        else:
+            self.dataset.results[file][DataSetFieldEnum.rVSMScore] = rVSMScore
+        if self.dataset.results[file][DataSetFieldEnum.rVSMScore] > self.rVSMz_max:
+            self.rVSMz_max = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
+        if self.dataset.results[file][DataSetFieldEnum.rVSMScore] < self.rVSMz_min:
+            self.rVSMz_min = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
 
-            if self.dataset.results[file][DataSetFieldEnum.rVSMScore] > self.rVSMz_max:
-                self.rVSMz_max = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
 
-            if self.dataset.results[file][DataSetFieldEnum.rVSMScore] < self.rVSMz_min:
-                self.rVSMz_min = self.dataset.results[file][DataSetFieldEnum.rVSMScore]
-
+    def calculate_file_size_score(self, number_of_terms, max, min):
+        return 1 / (1 + math.e ** (-1 * Util.normalization(number_of_terms, max, min)))

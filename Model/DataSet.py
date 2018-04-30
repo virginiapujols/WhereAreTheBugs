@@ -11,11 +11,13 @@ class DataSet:
         self.source_code_corpus = []
         self.max_file_word_count = 0
         self.min_file_word_count = 0
+        self.max_file_lengh = 0
+        self.min_file_lenght = 0
 
 
     def create_document_space(self):
         dsc = DocumentSpaceCreator()
-        self.source_code_list = dsc.parse_source_code()
+        self.source_code_list, self.min_file_lenght, self.max_file_lengh = dsc.parse_source_code()
         self.bug_report_list = dsc.parse_bug_reports()
         self.source_code_corpus, self.max_file_word_count, self.min_file_word_count = dsc.get_source_code_corpus_max_min(
             self.source_code_list)
