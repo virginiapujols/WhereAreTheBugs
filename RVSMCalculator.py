@@ -16,7 +16,7 @@ class RVSMCalculator:
         for i in range(len(cos_simi)):
             file_word_count = self.dataset.source_code_list[i].file_lenght
             cosine_score = cos_simi[i]
-            size_score = self.calculate_file_size_score(file_word_count*8.4, self.dataset.max_file_lengh, self.dataset.min_file_lenght)
+            size_score = self.calculate_file_size_score(file_word_count, self.dataset.max_file_lengh, self.dataset.min_file_lenght)
 
             rVSMScore = size_score * cosine_score
             self.distribute_size_score(i, rVSMScore)
